@@ -1,0 +1,11 @@
+@import "variables";
+@import "index";
+@import "menu";
+
+*,
+body,
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+}

@@ -1,0 +1,18 @@
+#main-content {
+  z-index: 1;
+  height: 130vh;
+  background: #ffbe3b;
+  position: relative;
+
+  :before {
+    z-index: -1;
+    position: absolute;
+    height: 130vh;
+    content: "";
+    right: 35%;
+    background: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+}

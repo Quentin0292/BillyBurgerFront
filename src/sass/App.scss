@@ -1,6 +1,7 @@
 @import "variables";
 @import "index";
 @import "menu";
+@import "header";
 
 *,
 body,
@@ -8,4 +9,6 @@ html {
   box-sizing: border-box;
   font-family: sans-serif;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }

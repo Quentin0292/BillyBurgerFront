@@ -1,33 +1,45 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Logo from "../../images/logo.png"
+import { FaBars, FaBookOpen } from "react-icons/fa"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+const Header = () => (
+  <header>
+    <nav>
+      <ul className="menu">
+        <li className="logo">
+          <Link to="#">
+            <img src={Logo} alt="" />
+          </Link>
+        </li>
+        <li className="item">
+          <Link to="#">Shop</Link>
+        </li>
+        <li className="item">
+          <Link to="#">Gift Cards</Link>
+        </li>
+        <li className="item">
+          <Link to="#">Food Track</Link>
+        </li>
+        <li className="item">
+          <Link to="#">Email Club</Link>
+        </li>
+        <li className="item">
+          <Link to="#">Contact</Link>
+        </li>
+        <span></span>
+        <li className="menu-btn">
+          <Link to="#">Menu</Link>
+          <FaBookOpen />
+        </li>
+        {/* <li className="toggle">
+          <Link to="#">
+            <FaBars />
+          </Link>
+        </li> */}
+      </ul>
+    </nav>
   </header>
 )
 

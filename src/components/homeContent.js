@@ -44,6 +44,23 @@ const homeContent = () => {
       </section>
       <section className="home-photo">
         <img className="home-burger" src={Burger} alt="" />
+        <div className="home-nutrition">
+          <div className="home-nutrition-card">
+            <span>Calories</span>
+            <span>Kcal</span>
+            <span>1370</span>
+          </div>
+          <div className="home-nutrition-card">
+            <span>Fat</span>
+            <span>g</span>
+            <span>93</span>
+          </div>
+          <div className="home-nutrition-card">
+            <span>Protein</span>
+            <span>g</span>
+            <span>85</span>
+          </div>
+        </div>
       </section>
     </div>
   )

@@ -26,9 +26,14 @@
 @media screen and (max-width: 768px) {
   #main-content {
     background: white;
+    height: auto;
   }
 
   :before {
     display: none;
+  }
+
+  #info-content {
+    height: auto;
   }
 }

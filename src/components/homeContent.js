@@ -1,5 +1,4 @@
 import React from "react"
-import Image from "./image"
 import Burger from "../images/burger-test.png"
 import { GiShinyApple } from "react-icons/gi"
 import { FaPagelines, FaPepperHot } from "react-icons/fa"

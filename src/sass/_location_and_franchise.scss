@@ -53,3 +53,28 @@
     }
   }
 }
+
+@media screen and (max-width: 812px) {
+  #loc-and-franchise {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    flex-direction: column;
+    width: 70vw;
+
+    .info-card {
+      padding: 15px 0;
+      // border: 1px solid red;
+      .info-content {
+        // h2 {
+        // //   font-size: 1.4em;
+        // // }
+        button {
+          width: 100%;
+        }
+      }
+      .info-pics {
+        display: none;
+      }
+    }
+  }
+}

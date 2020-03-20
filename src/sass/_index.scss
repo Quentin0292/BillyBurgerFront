@@ -1,13 +1,13 @@
 #main-content {
   z-index: 1;
-  height: 130vh;
+  height: 105vh;
   background: #ffbe3b;
   position: relative;
 
   :before {
     z-index: -1;
     position: absolute;
-    height: 130vh;
+    height: 105vh;
     content: "";
     right: 35%;
     background: white;
@@ -15,6 +15,12 @@
     bottom: 0;
     left: 0;
   }
+}
+
+#info-content {
+  height: 55vh;
+  background-color: #fbf8f2;
+  display: flex;
 }
 
 @media screen and (max-width: 768px) {

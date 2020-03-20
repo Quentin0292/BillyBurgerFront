@@ -1,0 +1,55 @@
+#loc-and-franchise {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  .info-card {
+    display: flex;
+    // width: 75%;
+    justify-content: space-around;
+
+    .info-content {
+      h2 {
+        font-family: "Passion One", cursive;
+        font-size: 3em;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 0.9em;
+        opacity: 0.5;
+        padding: 1.5em 0;
+      }
+      button {
+        padding: 10px 30px;
+        border-radius: 10px;
+        color: white;
+        text-transform: uppercase;
+        font-family: "Passion One", cursive;
+        font-size: 1.1em;
+
+        &:hover {
+          outline: none;
+          cursor: pointer;
+        }
+      }
+      .btn-location {
+        background-color: #00a950;
+      }
+      .btn-franchise {
+        background-color: #a1cf67;
+        margin-bottom: 0.2em;
+      }
+    }
+    .info-pics {
+      .delivery {
+        width: 300px;
+      }
+      .franchise {
+        width: 180px;
+        margin-right: 50px;
+      }
+    }
+  }
+}

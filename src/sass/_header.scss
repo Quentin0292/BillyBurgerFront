@@ -1,79 +1,8 @@
-// header {
-//   nav {
-//     // display: flex;
-//     // width: 100%;
-//     // justify-content: space-between;
-//     padding: 22px 44px;
-
-//     .menu-btn {
-//       background-color: green;
-//       padding: 6px;
-//       border-radius: 8px;
-//       color: white;
-
-//       a {
-//         color: white;
-//         text-transform: uppercase;
-//         text-decoration: none;
-//         font-family: sans-serif;
-//         margin: 0 1.5em;
-//       }
-//     }
-
-//     li {
-//       display: inline-block;
-//       vertical-align: middle;
-
-//       a {
-//         margin: 0 10px;
-//         position: relative;
-
-//         &:before {
-//           content: "";
-//           position: absolute;
-//           width: 36px;
-//           height: 36px;
-//           left: 50%;
-//           top: 50%;
-//           transform: translate(-50%, -50%) scale(0);
-//           border-radius: 50%;
-//           opacity: 0.2;
-//           transition: transform 0.25s;
-//         }
-
-//         &.active:before,
-//         &:focus:before,
-//         &:hover:before {
-//           transform: translate(-50%, -50%) scale(1);
-//         }
-//       }
-//     }
-
-//     img {
-//       width: 88px;
-//       height: auto;
-//       align-items: center;
-//       transition: width 0.25s;
-//       margin-right: 50px;
-//     }
-
-//     .item {
-//       a {
-//         text-transform: uppercase;
-//         text-decoration: none;
-//         font-family: sans-serif;
-//         margin: 0 1.5em;
-//         color: black;
-//       }
-//     }
-//   }
-// }
-
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
+  min-height: 10vh;
   font-family: "Passion One", cursive;
 
   .logo {
@@ -100,6 +29,10 @@ nav {
       padding: 8px 35px;
       border-radius: 8px;
       color: white;
+
+      .menu-logo {
+        vertical-align: middle;
+      }
     }
   }
   .burger {
@@ -124,7 +57,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 812px) {
   body {
     overflow-x: hidden;
   }
@@ -132,7 +65,7 @@ nav {
     background-color: #ffbe3b;
 
     .logo {
-      margin-left: 168.5px;
+      margin-left: 30%;
       margin-right: auto;
     }
     .nav-links {
@@ -140,7 +73,7 @@ nav {
       background-color: #ffbe3b;
       right: 0px;
       height: 92vh;
-      top: 9vh;
+      top: 8vh;
       display: flex;
       flex-direction: column;
       align-items: center;

@@ -53,9 +53,8 @@ class Header extends Component {
             </li>
             <li>
               <Link to="#" className="menu">
-                Menu
+                Menu <FaBookOpen className="menu-logo" />
               </Link>
-              {/* <FaBookOpen /> */}
             </li>
           </ul>
           <div

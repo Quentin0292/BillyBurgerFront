@@ -1,0 +1,114 @@
+.ingredients-section {
+  // display: flex;
+  // border: 1px solid red;
+  h1 {
+    text-transform: uppercase;
+    font-family: "Passion One", cursive;
+    font-size: 3.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ingredients-list {
+    display: flex;
+    // justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      font-family: "Passion One", cursive;
+      font-size: 2.2em;
+      text-transform: uppercase;
+      color: #00a652;
+    }
+
+    .ingredients-left {
+      display: flex;
+      height: 40vh;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 18vw;
+
+      .ingredients-item {
+        ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          font-family: "Poppins", sans-serif;
+          font-size: 0.7em;
+          color: #918c85;
+        }
+        svg {
+          color: #a1cf67;
+          font-size: 1em;
+          margin-right: 1em;
+        }
+        &:last-child {
+          align-self: flex-end;
+        }
+      }
+    }
+
+    .ingredients-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 40vh;
+      width: 18vw;
+
+      .ingredients-item {
+        ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          font-family: "Poppins", sans-serif;
+          font-size: 0.7em;
+          color: #918c85;
+        }
+        svg {
+          color: #a1cf67;
+          font-size: 1em;
+          margin-right: 1em;
+        }
+        &:first-child {
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+
+  img {
+    width: 700px;
+  }
+
+  .ingredients-comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    span {
+      font-family: "Passion One", cursive;
+      color: #ff8e28;
+      text-transform: uppercase;
+      font-size: 1.1em;
+    }
+
+    button {
+      margin-top: 2em;
+      font-family: "Passion One", cursive;
+      font-size: 1em;
+      text-transform: uppercase;
+      padding: 9px 18px;
+      color: white;
+      background-color: black;
+      border: none;
+      border-radius: 12px;
+    }
+  }
+}

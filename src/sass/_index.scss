@@ -23,6 +23,12 @@
   display: flex;
 }
 
+#ingredient {
+  height: 105vh;
+  padding: 5em 5em;
+  background-color: #fbf8f2;
+}
+
 @media screen and (max-width: 768px) {
   #main-content {
     background: white;

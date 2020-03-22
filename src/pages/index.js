@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import HomeContent from "../components/homeContent"
 import LocationAndFranchise from "../components/locationAndFranchise"
 import Menu from "../components/menu"
+import Ingredients from "../components/ingredients"
 
 import "../sass/App.scss"
 
@@ -22,6 +23,9 @@ const IndexPage = () => (
     </section>
     <section id="menu">
       <Menu />
+    </section>
+    <section id="ingredient">
+      <Ingredients />
     </section>
 
     <Link to="/menu/">Go to menu</Link>

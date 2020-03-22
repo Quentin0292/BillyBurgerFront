@@ -89,7 +89,7 @@ const Menu = () => {
           <div className="content">
             <h2>
               <span>sweet</span>
-              <span>dessert</span>
+              <span>desserts</span>
             </h2>
             <p>
               Sed rhancus dolor a nisl iaculis, eu ullamcorper est pellentesque.

@@ -1,0 +1,249 @@
+.menu-section {
+  button {
+    cursor: pointer;
+    outline: none;
+  }
+  .first-menu-section {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    .menu-sandwiches,
+    .menu-burger,
+    .menu-salads {
+      height: 60vh;
+    }
+
+    .menu-sandwiches {
+      color: white;
+      background-color: #00a950;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .content {
+        margin-left: 2em;
+        height: auto;
+        h2 {
+          display: flex;
+          flex-direction: column;
+          font-size: 2.8em;
+          font-family: "Passion One", cursive;
+          text-transform: uppercase;
+        }
+        p {
+          margin: 1.5em 0;
+          font-size: 0.65em;
+          font-family: "Poppins", sans-serif;
+        }
+        button {
+          font-family: "Passion One", cursive;
+          font-size: 1.1em;
+          text-transform: uppercase;
+          margin: 2em 0;
+          padding: 9px 18px;
+          color: white;
+          background-color: black;
+          border: none;
+          border-radius: 12px;
+        }
+      }
+      .picture {
+        width: 250px;
+      }
+    }
+
+    .menu-burger {
+      background-color: #ff8e27;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      .content {
+        margin-left: 2em;
+        height: auto;
+        // width: 35%;
+        h2 {
+          display: flex;
+          flex-direction: column;
+          font-size: 2.8em;
+          font-family: "Passion One", cursive;
+          text-transform: uppercase;
+        }
+        p {
+          margin: 2.1em 0;
+          font-size: 0.65em;
+          font-family: "Poppins", sans-serif;
+        }
+        button {
+          font-family: "Passion One", cursive;
+          font-size: 1.1em;
+          text-transform: uppercase;
+          margin: 2em 0;
+          padding: 9px 18px;
+          color: white;
+          background-color: black;
+          border: none;
+          border-radius: 12px;
+        }
+      }
+      .picture {
+        width: 250px;
+      }
+    }
+
+    .menu-salads {
+      background-color: #a1cf67;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      .content {
+        margin-left: 2em;
+        height: auto;
+        // width: 35%;
+        h2 {
+          display: flex;
+          flex-direction: column;
+          font-size: 2.8em;
+          font-family: "Passion One", cursive;
+          text-transform: uppercase;
+        }
+        p {
+          margin: 2.1em 0;
+          font-size: 0.65em;
+          font-family: "Poppins", sans-serif;
+        }
+        button {
+          font-family: "Passion One", cursive;
+          font-size: 1.1em;
+          text-transform: uppercase;
+          margin: 2em 0;
+          padding: 9px 18px;
+          color: white;
+          background-color: black;
+          border: none;
+          border-radius: 12px;
+        }
+      }
+      .picture {
+        width: 250px;
+      }
+    }
+  }
+  .second-menu-section {
+    display: grid;
+    grid-template-columns: 50% 30% 20%;
+    .menu-kids,
+    .menu-desserts,
+    .menu-more {
+      height: 45vh;
+    }
+
+    .menu-kids {
+      background-color: #245dcb;
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+      color: white;
+      .content {
+        margin-left: 2em;
+        height: auto;
+        width: 45%;
+        h2 {
+          display: flex;
+          flex-direction: column;
+          font-size: 2.8em;
+          font-family: "Passion One", cursive;
+          text-transform: uppercase;
+        }
+        p {
+          margin: 2.1em 0;
+          font-size: 0.65em;
+          font-family: "Poppins", sans-serif;
+        }
+        button {
+          font-family: "Passion One", cursive;
+          font-size: 1.1em;
+          text-transform: uppercase;
+          // margin: 2em 0;
+          padding: 9px 18px;
+          color: white;
+          background-color: black;
+          border: none;
+          border-radius: 12px;
+        }
+      }
+      .picture {
+        width: 250px;
+        margin-right: 12em;
+      }
+    }
+
+    .menu-desserts {
+      background-color: #cd266d;
+      display: flex;
+      align-items: center;
+      color: white;
+      .content {
+        margin-left: 2em;
+        height: auto;
+        // width: 65%;
+        h2 {
+          display: flex;
+          flex-direction: column;
+          font-size: 2.8em;
+          font-family: "Passion One", cursive;
+          text-transform: uppercase;
+        }
+        p {
+          margin: 2.4em 0;
+          font-size: 0.65em;
+          font-family: "Poppins", sans-serif;
+        }
+        button {
+          font-family: "Passion One", cursive;
+          font-size: 1.1em;
+          text-transform: uppercase;
+          // margin: 2em 0;
+          padding: 9px 18px;
+          color: white;
+          background-color: black;
+          border: none;
+          border-radius: 12px;
+        }
+      }
+      .picture {
+        width: 200px;
+        img {
+          width: 300px;
+        }
+      }
+    }
+
+    .menu-more {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h2 {
+        display: flex;
+        flex-direction: column;
+        font-size: 2.8em;
+        font-family: "Passion One", cursive;
+        text-transform: uppercase;
+        line-height: 0.8em;
+      }
+      button {
+        color: white;
+        font-family: "Passion One", cursive;
+        background-color: #ff8e27;
+        border: none;
+        font-weight: bold;
+        padding: 6px 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 40px;
+        margin-top: 3em;
+      }
+    }
+  }
+}

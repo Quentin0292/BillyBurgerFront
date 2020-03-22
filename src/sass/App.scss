@@ -12,7 +12,12 @@ body,
 html {
   box-sizing: border-box;
   list-style: none;
+
   // font-family: "Josefin Sans", cursive;
   margin: 0;
   padding: 0;
+}
+
+body {
+  overflow-x: hidden;
 }

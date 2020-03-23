@@ -8,7 +8,7 @@ import HomeContent from "../components/homeContent"
 import LocationAndFranchise from "../components/locationAndFranchise"
 import Menu from "../components/menu"
 import Ingredients from "../components/ingredients"
-
+import VideoSection from "../components/videoSection"
 import "../sass/App.scss"
 
 const IndexPage = () => (
@@ -26,6 +26,9 @@ const IndexPage = () => (
     </section>
     <section id="ingredient">
       <Ingredients />
+    </section>
+    <section id="video">
+      <VideoSection />
     </section>
 
     <Link to="/menu/">Go to menu</Link>

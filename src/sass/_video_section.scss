@@ -1,0 +1,106 @@
+.video-section {
+  color: white;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 95vh;
+
+  .content {
+    padding: 10vh 10vw;
+
+    h3 {
+      font-family: "Passion One", cursive;
+      font-size: 6em;
+      color: #00a950;
+      text-transform: uppercase;
+    }
+    .content-description {
+      p {
+        display: flex;
+        flex-direction: column;
+        span {
+          color: #ff8e29;
+        }
+        &:first-child {
+          font-size: 2.3em;
+          text-transform: uppercase;
+          font-family: "Passion One", cursive;
+          color: #a1cf67;
+        }
+        &:last-child {
+          padding: 1.5em 0;
+          font-family: "Poppins", sans-serif;
+          font-size: 0.8em;
+          opacity: 0.4;
+        }
+      }
+    }
+    .content-action {
+      margin-bottom: 3em;
+      button {
+        margin-top: 2em;
+        font-family: "Passion One", cursive;
+        font-size: 1em;
+        text-transform: uppercase;
+        padding: 9px 18px;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        outline: none;
+      }
+      .action-video {
+        background-color: #00a950;
+        margin-right: 2em;
+      }
+      .action-about {
+        background-color: transparent;
+        opacity: 0.5;
+        border: 0.04em solid grey;
+      }
+    }
+    .content-resume {
+      display: flex;
+      flex-direction: column;
+      h6 {
+        text-transform: uppercase;
+        font-family: "Passion One", cursive;
+        opacity: 0.4;
+        font-size: 0.9em;
+      }
+      .content-resume-card {
+        display: flex;
+        justify-content: space-between;
+        width: 120%;
+        font-family: "Passion One", cursive;
+        text-transform: uppercase;
+        color: #ff8e29;
+        .card-item {
+          display: flex;
+          justify-content: center;
+          justify-content: space-between;
+          padding: 2em 1em;
+          align-items: center;
+          p {
+            width: 60%;
+          }
+        }
+      }
+      svg {
+        font-size: 3.5em;
+      }
+    }
+  }
+
+  .pictures {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+    height: 95vh;
+    img {
+      width: 100%;
+      height: auto;
+      bottom: 0;
+    }
+  }
+}

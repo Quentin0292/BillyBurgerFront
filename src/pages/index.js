@@ -9,6 +9,7 @@ import LocationAndFranchise from "../components/locationAndFranchise"
 import Menu from "../components/menu"
 import Ingredients from "../components/ingredients"
 import VideoSection from "../components/videoSection"
+import Footer from "../components/Layout/footer"
 import "../sass/App.scss"
 
 const IndexPage = () => (
@@ -31,7 +32,7 @@ const IndexPage = () => (
       <VideoSection />
     </section>
 
-    <Link to="/menu/">Go to menu</Link>
+    {/* <Link to="/menu/">Go to menu</Link> */}
   </Layout>
 )
 

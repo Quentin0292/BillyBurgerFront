@@ -34,7 +34,7 @@ const homeContent = () => {
           </div>
         </div>
         <div className="home-order">
-          <button>order now </button>
+          <button className="desktop-button">order now </button>
           <div>
             <span>$12.99</span>
             <span>$14.99</span>
@@ -61,6 +61,13 @@ const homeContent = () => {
           </div>
         </div>
       </section>
+      <div className="only-mobile">
+        <button className="mobile-buton">order now</button>
+        <div>
+          <span>$12.99</span>
+          <span>$14.99</span>
+        </div>
+      </div>
     </div>
   )
 }

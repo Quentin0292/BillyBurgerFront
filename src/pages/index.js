@@ -15,8 +15,8 @@ import "../sass/App.scss"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <Header />
     <section id="main-content">
-      <Header />
       <HomeContent />
     </section>
     <section id="info-content">

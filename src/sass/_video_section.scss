@@ -76,7 +76,6 @@
         color: #ff8e29;
         .card-item {
           display: flex;
-          justify-content: center;
           justify-content: space-between;
           padding: 2em 1em;
           align-items: center;
@@ -92,15 +91,42 @@
   }
 
   .pictures {
-    height: 100%;
     display: flex;
     justify-content: flex-end;
-    height: auto;
     height: 95vh;
     img {
       width: 100%;
       height: auto;
-      bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 813px) {
+  .video-section {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    .content {
+      padding: 2em 2em;
+
+      .content-resume {
+        .content-resume-card {
+          flex-direction: column;
+          justify-content: center;
+
+          .card-item {
+            padding: 2em 0;
+            justify-content: flex-start;
+
+            p {
+              padding: 0 25px;
+            }
+          }
+        }
+      }
+    }
+    .pictures {
+      display: none;
     }
   }
 }

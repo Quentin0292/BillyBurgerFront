@@ -44,3 +44,23 @@
     }
   }
 }
+
+@media screen and (max-width: 813px) {
+  .footer-section {
+    padding: 2em 2em;
+    flex-direction: column-reverse;
+    text-align: center;
+    font-size: 0.7;
+
+    .footer-right {
+      // padding: 10px 0;
+
+      .footer-social-media {
+        justify-content: center;
+        svg {
+          margin: 10px 5px;
+        }
+      }
+    }
+  }
+}

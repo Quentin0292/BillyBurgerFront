@@ -23,16 +23,24 @@
 }
 
 #footer {
-  height: 12vh;
+  height: 134vh;
 }
 
 @media screen and (max-width: 813px) {
   #main-content {
-    background: white;
     height: auto;
   }
 
   #info-content {
+    height: auto;
+  }
+
+  #ingredient {
+    height: auto;
+    padding: 2em 2em;
+  }
+
+  #video {
     height: auto;
   }
 }

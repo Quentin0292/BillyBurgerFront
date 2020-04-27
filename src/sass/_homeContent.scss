@@ -1,10 +1,13 @@
 .home-content {
   display: flex;
   align-items: center;
-  margin: 0px auto;
-  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  height: 95vh;
 
   .home-info {
+    width: 600px;
     .btn-new {
       background-color: #ef4515;
       color: white;
@@ -16,7 +19,6 @@
       letter-spacing: 1px;
       border-radius: 32%;
     }
-    // width: 80%;
     .home-title {
       font-size: 4.2em;
       padding-top: 15px;
@@ -99,7 +101,7 @@
     .home-burger {
       max-width: 1000px;
       width: 590px;
-      padding-top: 35px;
+      // padding-top: 35px;
     }
 
     .home-nutrition {
@@ -156,10 +158,6 @@
   }
 }
 
-// .home-info {
-//   width: 40%;
-// }
-
 @media only screen and (min-width: 1624px) {
   .home-content {
     width: 70vw;
@@ -174,36 +172,49 @@
 
 @media only screen and (max-width: 800px) {
   .home-content {
-    display: flex;
     flex-direction: column;
     width: 85%;
     margin: 2.5em auto;
     .home-info {
       display: flex;
       flex-direction: column;
+      width: 320px;
+      padding-bottom: 15px;
 
       .btn-new {
         display: none;
       }
 
       .home-title {
-        font-size: 2.9em;
+        font-size: 2.6em;
+        display: flex;
+        align-items: center;
       }
       .home-spicy {
         font-size: 1.2em;
-        padding-top: 1em;
+        padding: 0.5em 0;
+        span {
+          display: none;
+        }
       }
       .home-description {
-        font-size: 1.3em;
+        font-size: 1em;
+        overflow-y: hidden;
+        height: auto;
         width: 100%;
       }
       .home-ingredient {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
         .ingredient-title {
           font-size: 1.4em;
           letter-spacing: 0.05em;
         }
         .ingredient-list {
-          font-size: 2em;
+          padding-top: 10px;
+          font-size: 1.8em;
+          width: 250px;
         }
       }
       .home-order {
@@ -213,7 +224,8 @@
 
     .home-photo {
       .home-burger {
-        width: 100%;
+        width: 300px;
+        padding-bottom: 30px;
       }
 
       .home-nutrition {

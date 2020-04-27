@@ -10,8 +10,8 @@ const homeContent = () => {
   return (
     <div className="home-content">
       <section className="home-info">
-        <span className="btn-new">new</span>
-        <h1 className="home-title">the double decker</h1>
+        <span className="new">new</span>
+        <h1>the double decker</h1>
         <div className="home-spicy">
           <FaPepperHot />
           <FaPepperHot />
@@ -21,14 +21,14 @@ const homeContent = () => {
           <span>Spicy</span>
         </div>
         <p className="home-description">
-          Sed new consequat lorem, phasellus convaliis ante eu augue finibus
-          maximus. In inperdiet non ex id ultricies. Suspendies ac diam id elit
-          loreeet portitior. Proin quis totrotr nisi
+          Beef, crispy jambon and Fourme d’Ambert cheese from La Fromagerie, red
+          onion relish, tomato, rocket and pickles with homemade rosemary salted
+          chips
         </p>
         {/* <Link to="/page2">page 2 </Link> */}
 
         <div className="home-ingredient">
-          <div className="ingredient-title">Ingredients</div>
+          <h4>Ingredients</h4>
           <div className="ingredient-list">
             <GiShinyApple />
             <FaPagelines />
@@ -47,7 +47,6 @@ const homeContent = () => {
       </section>
       <section className="home-photo">
         <div className="home-burger">
-          {/* <img src={Burger} alt="" /> */}
           <Image />
         </div>
         <div className="home-nutrition">

@@ -1,48 +1,39 @@
 .home-content {
   display: flex;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  height: 95vh;
+  height: 650px;
+  justify-content: center;
 
   .home-info {
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 500px;
+    text-align: center;
+    font-family: "Passion One", cursive;
 
-    width: 600px;
-    .btn-new {
+    .new {
       background-color: #ef4515;
       color: white;
-      font-family: "Passion One", cursive;
-      font-size: 1em;
       padding: 6px 5px;
       text-transform: uppercase;
-      font-weight: 500;
-      letter-spacing: 1px;
       border-radius: 32%;
       width: 50px;
-      text-align: center;
     }
-    .home-title {
+    h1 {
       font-size: 4.2em;
-      padding-top: 15px;
-      font-weight: 600;
+      padding-bottom: 25px;
       text-transform: uppercase;
-      font-family: "Passion One", cursive;
     }
     .home-spicy {
       color: #ee4216;
       display: flex;
       font-size: 1.3em;
+      justify-content: center;
       .not-spicy {
         opacity: 0.4;
       }
 
       span {
-        font-family: "Passion One", cursive;
         letter-spacing: 0.1em;
         margin-left: 1em;
       }
@@ -50,79 +41,78 @@
     .home-description {
       font-family: sans-serif;
       color: #8a8a8a;
-      font-size: 0.9em;
-      width: 75%;
-      padding: 1em 0;
+      padding-top: 30px;
     }
 
     .home-ingredient {
       text-transform: uppercase;
       font-family: "Passion One", cursive;
-      padding-bottom: 1em;
+      text-align: center;
+      padding: 30px 0;
 
-      .ingredient-title {
+      h4 {
         color: rgb(153, 150, 150);
+        padding-bottom: 15px;
+        font-size: 25px;
+        letter-spacing: 2px;
       }
 
       .ingredient-list {
-        font-size: 1.6em;
-        margin-top: 0.4em;
-        color: #00a950;
         display: flex;
-        justify-content: space-between;
-        max-width: 250px;
-        width: 50%;
+        justify-content: space-around;
+        color: #00a950;
+        font-size: 25px;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
     .home-order {
       display: flex;
-      justify-content: space-between;
-      max-width: 250px;
-      width: 60%;
+      justify-content: center;
       button {
         background-color: black;
         padding: 9px 23px;
         font-family: "Passion One", cursive;
         text-transform: uppercase;
-        font-size: 0.9em;
+        font-size: 18px;
         border-radius: 15%;
         color: white;
         border: none;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
       span {
         color: #00a950;
-        font-size: 2em;
+        font-size: 35px;
         font-family: "Passion One", cursive;
         font-weight: 600;
 
+        &:first-child {
+          padding-left: 30px;
+        }
+
         &:last-child {
           color: #aed581;
-          font-size: 0.9em;
+          font-size: 20px;
           text-decoration: line-through;
         }
       }
     }
   }
   .home-photo {
-    height: 100%;
-    width: 600px;
     display: flex;
-    // align-items: center;
     flex-direction: column-reverse;
+    width: 600px;
     justify-content: center;
-    .home-burger {
-      img {
-        max-width: 1000px;
-        width: 590px;
-      }
-      // padding-top: 35px;
-    }
 
     .home-nutrition {
       display: flex;
       position: relative;
-      top: 100px;
-      left: 260px;
+      top: 70px;
+      left: 300px;
 
       .home-nutrition-card {
         border: 1px solid #ffbe3b;
@@ -196,22 +186,14 @@
       flex-direction: column;
       width: 100%;
       padding-bottom: 15px;
-
-      .btn-new {
-        display: none;
-      }
-
       .home-title {
-        font-size: 2.6em;
+        font-size: 3em;
         display: flex;
         align-items: center;
       }
       .home-spicy {
         font-size: 1.2em;
         padding: 0.5em 0;
-        span {
-          display: none;
-        }
       }
       .home-description {
         font-size: 1em;
@@ -239,12 +221,12 @@
     }
 
     .home-photo {
+      width: 100%;
       .home-burger {
-        width: 55%;
-
+        width: 75%;
+        z-index: -99;
         margin-left: auto;
         margin-right: auto;
-        // padding-bottom: 30px;
       }
 
       .home-nutrition {
@@ -255,7 +237,9 @@
       display: block;
       display: flex;
       flex-direction: column-reverse;
-      justify-content: space-around;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20px;
       button {
         margin-top: 2em;
         cursor: pointer;

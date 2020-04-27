@@ -3,7 +3,9 @@ import Burger from "../images/burger-test.png"
 import { GiShinyApple } from "react-icons/gi"
 import { FaPagelines, FaPepperHot } from "react-icons/fa"
 import { IoMdEgg } from "react-icons/io"
+import Image from "../components/image"
 
+import { Link } from "gatsby"
 const homeContent = () => {
   return (
     <div className="home-content">
@@ -23,6 +25,8 @@ const homeContent = () => {
           maximus. In inperdiet non ex id ultricies. Suspendies ac diam id elit
           loreeet portitior. Proin quis totrotr nisi
         </p>
+        {/* <Link to="/page2">page 2 </Link> */}
+
         <div className="home-ingredient">
           <div className="ingredient-title">Ingredients</div>
           <div className="ingredient-list">
@@ -42,7 +46,10 @@ const homeContent = () => {
         </div>
       </section>
       <section className="home-photo">
-        <img className="home-burger" src={Burger} alt="" />
+        <div className="home-burger">
+          {/* <img src={Burger} alt="" /> */}
+          <Image />
+        </div>
         <div className="home-nutrition">
           <div className="home-nutrition-card">
             <span>Calories</span>

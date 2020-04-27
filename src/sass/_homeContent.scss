@@ -7,6 +7,12 @@
   height: 95vh;
 
   .home-info {
+    border: 1px solid red;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     width: 600px;
     .btn-new {
       background-color: #ef4515;
@@ -18,6 +24,8 @@
       font-weight: 500;
       letter-spacing: 1px;
       border-radius: 32%;
+      width: 50px;
+      text-align: center;
     }
     .home-title {
       font-size: 4.2em;
@@ -97,17 +105,25 @@
     }
   }
   .home-photo {
+    height: 100%;
+    width: 600px;
     display: flex;
+    // align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
     .home-burger {
-      max-width: 1000px;
-      width: 590px;
+      img {
+        max-width: 1000px;
+        width: 590px;
+      }
       // padding-top: 35px;
     }
 
     .home-nutrition {
       display: flex;
-      margin-left: -230px;
-      height: 40%;
+      position: relative;
+      top: 100px;
+      left: 260px;
 
       .home-nutrition-card {
         border: 1px solid #ffbe3b;
@@ -175,10 +191,11 @@
     flex-direction: column;
     width: 85%;
     margin: 2.5em auto;
+    height: auto;
     .home-info {
       display: flex;
       flex-direction: column;
-      width: 320px;
+      width: 100%;
       padding-bottom: 15px;
 
       .btn-new {
@@ -224,8 +241,11 @@
 
     .home-photo {
       .home-burger {
-        width: 300px;
-        padding-bottom: 30px;
+        width: 75%;
+
+        margin-left: auto;
+        margin-right: auto;
+        // padding-bottom: 30px;
       }
 
       .home-nutrition {

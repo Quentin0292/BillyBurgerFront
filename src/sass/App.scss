@@ -18,8 +18,15 @@ html {
   // font-family: "Josefin Sans", cursive;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
-  overflow-x: hidden;
+  position: relative;
 }
+
+// @media only screen and (min-width: 1624px) {
+//   body {
+//     overflow: hidden;
+//   }
+// }

@@ -9,8 +9,8 @@ const locationAndFranchise = () => {
         <div className="info-content">
           <h2>realy faaaaaaast delivery !</h2>
           <p>
-            In imperdiet non ex id ultricies. Suspendisse ac dia id elit looreet
-            partitor. Proin quis tarter nisi
+            Mauris sed nisl at massa vehicula tristrique Integer lorem eros,
+            vestibuluti ac ante non, consectetur hendrerit lacus.
           </p>
           <button className="btn-location">find your location</button>
         </div>

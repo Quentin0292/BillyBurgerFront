@@ -27,6 +27,7 @@
     .home-spicy {
       color: #ee4216;
       display: flex;
+      z-index: -999;
       font-size: 1.3em;
       justify-content: center;
       .not-spicy {
@@ -186,7 +187,7 @@
       flex-direction: column;
       width: 100%;
       padding-bottom: 15px;
-      .home-title {
+      h1 {
         font-size: 3em;
         display: flex;
         align-items: center;

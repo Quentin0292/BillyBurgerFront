@@ -1,28 +1,30 @@
 #loc-and-franchise {
+  background-color: #fbf8f2;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 75vw;
-  margin-left: auto;
-  margin-right: auto;
+  height: 450px;
   .info-card {
     display: flex;
-    // width: 75%;
-    // border: 1px solid red;
-    justify-content: space-around;
-
+    height: 100%;
+    padding: 50px 50px;
+    width: 50%;
     .info-content {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      justify-content: center;
+      max-width: 450px;
+      // text-align: center;
       h2 {
         font-family: "Passion One", cursive;
-        font-size: 3em;
+        font-size: 40px;
         text-transform: uppercase;
       }
       p {
-        font-size: 0.9em;
         opacity: 0.5;
-        padding: 1.5em 0;
+        padding: 25px 0;
       }
       button {
+        margin-top: 10px;
         padding: 10px 30px;
         border-radius: 10px;
         color: white;
@@ -45,12 +47,16 @@
       }
     }
     .info-pics {
+      border: 1px solid violet;
+      max-width: 400px;
+      padding: 20px;
+
       .delivery {
-        width: 300px;
+        width: 100%;
       }
+
       .franchise {
-        width: 180px;
-        margin-right: 50px;
+        width: 60%;
       }
     }
   }
@@ -64,18 +70,14 @@
 
 @media screen and (max-width: 812px) {
   #loc-and-franchise {
-    margin-top: 2em;
-    margin-bottom: 2em;
     flex-direction: column;
-    width: 70vw;
+    height: 800px;
 
     .info-card {
-      padding: 15px 0;
-      // border: 1px solid red;
+      padding: 10px 0;
+      width: 100%;
       .info-content {
-        // h2 {
-        // //   font-size: 1.4em;
-        // // }
+        padding: 25px;
         button {
           width: 100%;
         }

@@ -181,14 +181,15 @@
     margin: 2.5em auto;
     height: auto;
     .home-info {
-      width: 399px;
+      width: auto;
       padding-bottom: 15px;
       align-items: center;
       h1 {
-        font-size: 45px;
+        font-size: 50px;
+        text-align: center;
       }
       .home-spicy {
-        font-size: 20px;
+        font-size: 18px;
         padding: 0.5em 0;
       }
       .home-description {

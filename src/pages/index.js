@@ -18,9 +18,7 @@ const IndexPage = () => (
     <Header />
     <HomeContent />
     <LocationAndFranchise />
-    <section id="menu">
-      <Menu />
-    </section>
+    <Menu />
     <section id="ingredient">
       <Ingredients />
     </section>

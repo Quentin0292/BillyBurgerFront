@@ -6,30 +6,28 @@
   .first-menu-section {
     display: grid;
     grid-template-columns: 30% 40% 30%;
-    .menu-sandwiches,
-    .menu-burger,
-    .menu-salads {
-      height: 60vh;
-    }
 
     .menu-sandwiches {
       color: white;
       background-color: #00a950;
       display: flex;
       align-items: center;
-      justify-content: center;
+      padding: 20px 0px 20px 40px;
       .content {
-        margin-left: 2em;
-        height: auto;
+        text-align: center;
+        height: 300px;
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         h2 {
           display: flex;
           flex-direction: column;
-          font-size: 2.8em;
+          font-size: 45px;
           font-family: "Passion One", cursive;
           text-transform: uppercase;
         }
         p {
-          margin: 1.5em 0;
           font-size: 0.65em;
           font-family: "Poppins", sans-serif;
         }
@@ -37,16 +35,22 @@
           font-family: "Passion One", cursive;
           font-size: 1.1em;
           text-transform: uppercase;
-          margin: 2em 0;
           padding: 9px 18px;
           color: white;
-          background-color: black;
-          border: none;
+          background-color: transparent;
+          border: 1px solid white;
+          width: 150px;
+          align-self: center;
           border-radius: 12px;
+          &:hover {
+            color: #00a950;
+            background-color: white;
+            border: 1px solid #00a950;
+          }
         }
       }
       .picture {
-        width: 250px;
+        margin-left: 20px;
       }
     }
 
@@ -55,11 +59,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 20px 0px 20px 40px;
       color: white;
       .content {
-        margin-left: 2em;
-        height: auto;
-        // width: 35%;
+        text-align: center;
+        height: 300px;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         h2 {
           display: flex;
           flex-direction: column;
@@ -76,16 +84,23 @@
           font-family: "Passion One", cursive;
           font-size: 1.1em;
           text-transform: uppercase;
-          margin: 2em 0;
           padding: 9px 18px;
           color: white;
-          background-color: black;
-          border: none;
+          background-color: transparent;
+          width: 150px;
+          align-self: center;
+          border: 1px solid white;
           border-radius: 12px;
+
+          &:hover {
+            color: #ff8e27;
+            background-color: white;
+            border: 1px solid #ff8e27;
+          }
         }
       }
       .picture {
-        width: 250px;
+        margin-left: 20px;
       }
     }
 
@@ -93,12 +108,16 @@
       background-color: #a1cf67;
       display: flex;
       align-items: center;
-      justify-content: center;
+      // justify-content: center;
+      padding: 20px 0px 20px 40px;
       color: white;
       .content {
-        margin-left: 2em;
-        height: auto;
-        // width: 35%;
+        text-align: center;
+        height: 300px;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         h2 {
           display: flex;
           flex-direction: column;
@@ -115,38 +134,43 @@
           font-family: "Passion One", cursive;
           font-size: 1.1em;
           text-transform: uppercase;
-          margin: 2em 0;
           padding: 9px 18px;
+          width: 150px;
+          align-self: center;
           color: white;
-          background-color: black;
-          border: none;
+          background-color: transparent;
+          border: 1px solid white;
           border-radius: 12px;
+
+          &:hover {
+            color: #a1cf67;
+            background-color: white;
+            border: 1px solid #a1cf67;
+          }
         }
       }
       .picture {
-        width: 250px;
+        margin-left: 20px;
       }
     }
   }
   .second-menu-section {
     display: grid;
     grid-template-columns: 50% 30% 20%;
-    .menu-kids,
-    .menu-desserts,
-    .menu-more {
-      height: 45vh;
-    }
 
     .menu-kids {
       background-color: #245dcb;
       display: flex;
+      padding: 20px 0px 20px 40px;
       align-items: center;
-      // justify-content: center;
       color: white;
       .content {
-        margin-left: 2em;
-        height: auto;
-        // width: 45%;
+        height: 300px;
+        width: 450px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         h2 {
           display: flex;
           flex-direction: column;
@@ -155,7 +179,6 @@
           text-transform: uppercase;
         }
         p {
-          margin: 2.1em 0;
           font-size: 0.65em;
           font-family: "Poppins", sans-serif;
         }
@@ -163,17 +186,20 @@
           font-family: "Passion One", cursive;
           font-size: 1.1em;
           text-transform: uppercase;
-          // margin: 2em 0;
           padding: 9px 18px;
           color: white;
-          background-color: black;
-          border: none;
+          width: 150px;
+          align-self: center;
+          background-color: transparent;
+          border: 1px solid white;
           border-radius: 12px;
+
+          &:hover {
+            color: #245dcb;
+            background-color: white;
+            border: 1px solid #245dcb;
+          }
         }
-      }
-      .picture {
-        width: 250px;
-        margin-right: 12em;
       }
     }
 
@@ -181,11 +207,15 @@
       background-color: #cd266d;
       display: flex;
       align-items: center;
+      padding: 20px 0px 20px 40px;
       color: white;
       .content {
-        margin-left: 2em;
-        height: auto;
-        // width: 65%;
+        text-align: center;
+        height: 300px;
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         h2 {
           display: flex;
           flex-direction: column;
@@ -194,7 +224,6 @@
           text-transform: uppercase;
         }
         p {
-          margin: 2.4em 0;
           font-size: 0.65em;
           font-family: "Poppins", sans-serif;
         }
@@ -202,16 +231,25 @@
           font-family: "Passion One", cursive;
           font-size: 1.1em;
           text-transform: uppercase;
-          // margin: 2em 0;
+          width: 150px;
+          align-self: center;
           padding: 9px 18px;
           color: white;
-          background-color: black;
-          border: none;
+          background-color: transparent;
+          border: 1px solid white;
           border-radius: 12px;
+
+          &:hover {
+            color: #cd266d;
+            background-color: white;
+            border: 1px solid #cd266d;
+          }
         }
       }
+
       .picture {
-        width: 200px;
+        margin-left: 20px;
+
         img {
           width: 300px;
         }
@@ -259,31 +297,35 @@
       flex-direction: column;
 
       .menu-sandwiches {
-        padding: 2em 0;
-        height: auto;
-        .content {
-          margin-left: 1em;
-        }
+        padding: 10px 0px 10px 20px;
+        height: 400px;
+        width: 100%;
 
         .picture {
           width: 200px;
         }
       }
       .menu-burger {
-        padding: 2em 0;
-        height: auto;
+        height: 450px;
+        padding: 10px 0px 10px 20px;
+        .content {
+          width: 350px;
+        }
         .picture {
+          margin-left: 5px;
           width: 200px;
         }
       }
 
       .menu-salads {
-        padding: 2em 0;
-        height: auto;
+        padding: 10px 0px 10px 20px;
+
+        height: 400;
         .content {
-          margin-left: 1em;
+          width: 350px;
         }
         .picture {
+          margin-left: 5px;
           width: 200px;
         }
       }
@@ -292,21 +334,19 @@
       display: grid;
       grid-template-columns: 50% 50%;
       .menu-kids {
+        padding: 20px 20px 20px 20px;
         .content {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          margin-left: 0;
-
           h2 {
-            font-size: 2em;
-            width: 100%;
-            text-align: center;
+            font-size: 1.8em;
           }
           p {
-            width: 100%;
-            text-align: center;
+            font-size: 0.6em;
+          }
+          button {
+            background-color: transparent;
+            border: 1px solid white;
+            width: 100px;
+            font-size: 0.9em;
           }
         }
         .picture {
@@ -314,25 +354,24 @@
         }
       }
       .menu-desserts {
+        padding: 20px 20px 20px 20px;
         .content {
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          justify-content: space-between;
           align-items: center;
           margin-left: 0;
           h2 {
-            font-size: 2em;
-            width: 100%;
-            text-align: center;
+            font-size: 1.8em;
           }
-
           p {
-            width: 100%;
-            text-align: center;
-            margin: 3.6em 0;
+            font-size: 0.6em;
           }
           button {
-            margin-top: 0.1em;
+            background-color: transparent;
+            border: 1px solid white;
+            width: 100px;
+            font-size: 0.9em;
           }
         }
         .picture {

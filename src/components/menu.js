@@ -17,8 +17,6 @@ const Menu = () => {
             </h2>
             <p>
               Morbi sed molesuada leao. Nom quis lectus convallis, interdum,
-            </p>
-            <p>
               lectus, si atel, fringila sem. In imperdiet non ultricies
               suspendisse ac diam id elit
             </p>
@@ -37,8 +35,6 @@ const Menu = () => {
             <p>
               Consequat lorem, phasellus convallis ante augue finibus maximus.
               In imperdiet non ultricies suspendisse ac diam id elit laoreet.
-            </p>
-            <p>
               Cras ac metus vel sem mlestie aliquet porta. Mauris ulticies nulla
               ac eros ultriceis.
             </p>
@@ -56,8 +52,6 @@ const Menu = () => {
             </h2>
             <p>
               Cras a dui congue, ultrices erat id, in imperdiet non ultricies.
-            </p>
-            <p>
               Susendisse ac diam id elit cursus lectus praesent sit amet
               scelerisque mauris.
             </p>
@@ -77,7 +71,9 @@ const Menu = () => {
             </h2>
             <p>
               Mauris sed nisl at massa vehicula tristique. Integer lorem eros,
-              vestibuum ac ante non, consectetur hendrerit locus.
+              vestibuum ac ante non, consectetur hendrerit locus. Mauris sed
+              nisl at massa vehicula tristique. Integer lorem eros, vestibuum ac
+              ante non, consectetur hendrerit locus.
             </p>
             <button>View Menu</button>
           </div>
@@ -92,6 +88,8 @@ const Menu = () => {
               <span>desserts</span>
             </h2>
             <p>
+              Sed rhancus dolor a nisl iaculis, eu ullamcorper est pellentesque.
+              Sed rhancus dolor a nisl iaculis, eu ullamcorper est pellentesque.
               Sed rhancus dolor a nisl iaculis, eu ullamcorper est pellentesque.
             </p>
             <button>View Menu</button>

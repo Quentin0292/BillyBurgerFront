@@ -41,6 +41,9 @@
       .btn-location {
         background-color: #00a950;
       }
+      .btn-shop {
+        background-color: #ff8e27;
+      }
       .btn-franchise {
         background-color: #a1cf67;
         margin-bottom: 0.2em;
@@ -55,7 +58,7 @@
 @media screen and (max-width: 812px) {
   #loc-and-franchise {
     flex-direction: column;
-    height: 800px;
+    height: 1200px;
 
     .info-card {
       width: 100%;

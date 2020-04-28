@@ -15,6 +15,17 @@ const locationAndFranchise = () => {
       </div>
       <div className="info-card">
         <div className="info-content">
+          <h2>Discover local burgers & beers</h2>
+          <p>
+            Find out more about the local special burgers, beers and more
+            serving at Billy Burgers. We love working with small independant
+            producers.
+          </p>
+          <button className="btn-shop">Take me there</button>
+        </div>
+      </div>
+      <div className="info-card">
+        <div className="info-content">
           <h2>don't wait become one of us now !</h2>
           <p>
             Mauris sed nisl at massa vehicula tristrique Integer lorem eros,

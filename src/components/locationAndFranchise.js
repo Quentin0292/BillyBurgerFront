@@ -1,6 +1,4 @@
 import React from "react"
-import DeliveryPics from "../images/delivery.png"
-import FranchisePics from "../images/franchise.png"
 
 const locationAndFranchise = () => {
   return (
@@ -14,14 +12,8 @@ const locationAndFranchise = () => {
           </p>
           <button className="btn-location">find your location</button>
         </div>
-        <div className="info-pics">
-          <img className="delivery" src={DeliveryPics} alt="" />
-        </div>
       </div>
       <div className="info-card">
-        <div className="info-pics">
-          <img className="franchise" src={FranchisePics} alt="" />
-        </div>
         <div className="info-content">
           <h2>don't wait become one of us now !</h2>
           <p>

@@ -1,19 +1,18 @@
 #loc-and-franchise {
   background-color: #fbf8f2;
   display: flex;
+  justify-content: center;
   height: 450px;
   .info-card {
     display: flex;
-    height: 100%;
-    padding: 50px 50px;
-    width: 50%;
+    padding: 50px;
     .info-content {
       display: flex;
       flex-direction: column;
-      padding: 20px;
       justify-content: center;
-      max-width: 450px;
-      // text-align: center;
+      padding: 20px;
+      max-width: 500px;
+      text-align: center;
       h2 {
         font-family: "Passion One", cursive;
         font-size: 40px;
@@ -31,6 +30,7 @@
         text-transform: uppercase;
         font-family: "Passion One", cursive;
         font-size: 1.1em;
+        letter-spacing: 2px;
         border: none;
 
         &:hover {
@@ -46,26 +46,10 @@
         margin-bottom: 0.2em;
       }
     }
-    .info-pics {
-      border: 1px solid violet;
-      max-width: 400px;
-      padding: 20px;
-
-      .delivery {
-        width: 100%;
-      }
-
-      .franchise {
-        width: 60%;
-      }
-    }
   }
 }
 
 @media screen and (min-width: 1624px) {
-  .info-card {
-    width: 43%;
-  }
 }
 
 @media screen and (max-width: 812px) {
@@ -74,16 +58,13 @@
     height: 800px;
 
     .info-card {
-      padding: 10px 0;
       width: 100%;
       .info-content {
+        align-items: center;
         padding: 25px;
         button {
           width: 100%;
         }
-      }
-      .info-pics {
-        display: none;
       }
     }
   }

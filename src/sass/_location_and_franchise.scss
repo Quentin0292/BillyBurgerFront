@@ -58,10 +58,11 @@
 @media screen and (max-width: 812px) {
   #loc-and-franchise {
     flex-direction: column;
-    height: 1500px;
+    height: auto;
 
     .info-card {
       width: 100%;
+      padding: 30px;
       .info-content {
         align-items: center;
         padding: 25px;

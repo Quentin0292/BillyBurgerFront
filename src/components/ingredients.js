@@ -1,6 +1,6 @@
 import React from "react"
-import IngredientsPicture from "../images/ingredients.png"
 import { FaCheckCircle } from "react-icons/fa"
+import Picture from "../components/Images/Ingredients"
 
 const Ingredients = () => {
   return (
@@ -10,7 +10,7 @@ const Ingredients = () => {
         <span>ingredients</span>
       </h1>
       <div className="ingredients-picture">
-        <img src={IngredientsPicture} alt="" />
+        <Picture />
       </div>
       <div className="ingredients-list">
         <div className="ingredients-information">

@@ -3,7 +3,7 @@ import Burger from "../images/burger-test.png"
 import { GiShinyApple } from "react-icons/gi"
 import { FaPagelines, FaPepperHot } from "react-icons/fa"
 import { IoMdEgg } from "react-icons/io"
-import Image from "../components/image"
+import Image from "../components/Images/homeBurger"
 
 import { Link } from "gatsby"
 const homeContent = () => {

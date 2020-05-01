@@ -9,8 +9,11 @@ const Ingredients = () => {
         <span>best quality</span>
         <span>ingredients</span>
       </h1>
+      <div className="ingredients-picture">
+        <img src={IngredientsPicture} alt="" />
+      </div>
       <div className="ingredients-list">
-        <div className="ingredients-left">
+        <div className="ingredients-information">
           <div className="ingredients-item">
             <h3>artisan buns</h3>
             <ul>
@@ -19,9 +22,6 @@ const Ingredients = () => {
               </li>
               <li>
                 <FaCheckCircle /> Custom recipe
-              </li>
-              <li>
-                <FaCheckCircle /> Mode cocally
               </li>
             </ul>
           </div>
@@ -36,11 +36,6 @@ const Ingredients = () => {
               </li>
             </ul>
           </div>
-        </div>
-        <div className="ingredients-picture">
-          <img src={IngredientsPicture} alt="" />
-        </div>
-        <div className="ingredients-right">
           <div className="ingredients-item">
             <h3>fresh produce</h3>
             <ul>
@@ -65,10 +60,11 @@ const Ingredients = () => {
           </div>
         </div>
       </div>
+
       <div className="ingredients-comment">
         <div>
-          <span>sed nec consequat lorem. Phasellus</span>
-          <span>convallis ante eu augue</span>
+          <span>Homemade fresh every day with</span>
+          <span> quality ingredients</span>
         </div>
         <button>read more</button>
       </div>

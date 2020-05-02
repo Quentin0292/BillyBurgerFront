@@ -31,7 +31,6 @@
         font-family: "Passion One", cursive;
         font-size: 1.1em;
         letter-spacing: 2px;
-        border: none;
 
         &:hover {
           outline: none;
@@ -40,13 +39,34 @@
       }
       .btn-location {
         background-color: #00a950;
+        border: 1px solid #00a950;
+
+        &:hover {
+          background-color: #fff;
+          color: #00a950;
+          border: 1px solid #00a950;
+          transition: 0.5s all;
+        }
       }
       .btn-shop {
         background-color: #ff8e27;
+        border: 1px solid #ff8e27;
+        &:hover {
+          background-color: #fff;
+          color: #ff8e27;
+          border: 1px solid #ff8e27;
+          transition: 0.5s all;
+        }
       }
       .btn-franchise {
         background-color: #a1cf67;
-        margin-bottom: 0.2em;
+        border: 1px solid #a1cf67;
+        &:hover {
+          background-color: #fff;
+          color: #a1cf67;
+          border: 1px solid #a1cf67;
+          transition: 0.5s all;
+        }
       }
     }
   }

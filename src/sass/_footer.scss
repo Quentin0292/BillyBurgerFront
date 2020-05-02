@@ -1,23 +1,23 @@
 .footer-section {
   display: flex;
-  padding: 5vh 10vw;
   justify-content: space-between;
+  // flex-wrap: wrap;
+  padding: 35px 130px;
+
   font-family: "Poppins", sans-serif;
-  font-size: 0.8em;
+  font-size: 14px;
 
   .footer-left {
-    color: #9a9387;
     display: flex;
     align-items: center;
-    justify-content: center;
+
+    color: #9a9387;
     span {
       font-weight: bold;
     }
   }
 
   .footer-right {
-    display: flex;
-    flex-direction: column;
     color: #9a9387;
     a {
       text-decoration: none;
@@ -28,13 +28,13 @@
     .footer-social-media {
       display: flex;
       justify-content: space-around;
-      margin-top: 0.5em;
+      padding: 5px;
+
       a {
         color: #9a9387;
       }
       svg {
-        font-size: 1.6em;
-        font-weight: bold;
+        font-size: 20px;
         cursor: pointer;
         &:hover {
           color: #ff8e29;
@@ -47,14 +47,16 @@
 
 @media screen and (max-width: 813px) {
   .footer-section {
-    padding: 2em 2em;
     flex-direction: column-reverse;
     text-align: center;
-    font-size: 0.7;
+    padding: 20px;
+
+    .footer-left {
+      justify-content: center;
+      font-size: 10px;
+    }
 
     .footer-right {
-      // padding: 10px 0;
-
       .footer-social-media {
         justify-content: center;
         svg {

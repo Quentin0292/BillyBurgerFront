@@ -1,4 +1,6 @@
 import React from "react"
+
+import { Link } from "gatsby"
 import { GiShinyApple } from "react-icons/gi"
 import { FaPagelines, FaPepperHot } from "react-icons/fa"
 import { IoMdEgg } from "react-icons/io"

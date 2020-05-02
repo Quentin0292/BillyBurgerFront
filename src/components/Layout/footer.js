@@ -23,7 +23,7 @@ const footer = () => {
             <a
               href="https://www.quentin-lecocq.fr"
               target="_blank"
-              rel="noopener norefferer"
+              rel="noopener noreferrer"
             >
               Quentin Lecocq
             </a>
@@ -34,7 +34,7 @@ const footer = () => {
             <a
               href="https://www.facebook.com/quentin.lecocq.142"
               target="_blank"
-              rel="noopener norefferer"
+              rel="noopener noreferrer"
             >
               <AiOutlineFacebook />
             </a>
@@ -43,7 +43,7 @@ const footer = () => {
             <a
               href="https://www.instagram.com/quentiinlecocq/"
               target="_blank"
-              rel="noopener norefferer"
+              rel="noopener noreferrer"
             >
               <AiOutlineInstagram />
             </a>
@@ -52,7 +52,7 @@ const footer = () => {
             <a
               href="https://www.linkedin.com/in/quentin-lecocq-47b354160/"
               target="_blank"
-              rel="noopener norefferer"
+              rel="noopener noreferrer"
             >
               <AiOutlineLinkedin />
             </a>
@@ -61,7 +61,7 @@ const footer = () => {
             <a
               href="https://github.com/Quentin0292"
               target="_blank"
-              rel="noopener norefferer"
+              rel="noopener noreferrer"
             >
               <AiOutlineGithub />
             </a>
@@ -70,7 +70,7 @@ const footer = () => {
             <a
               href="https://medium.com/@quentinlecocq"
               target="_blank"
-              rel="noopener norefferer"
+              rel="noopener noreferrer"
             >
               <AiOutlineMedium />
             </a>

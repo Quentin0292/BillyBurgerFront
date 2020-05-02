@@ -54,6 +54,7 @@
         &:hover {
           background-color: #0e0c0d;
           color: #00a950;
+          transition: 0.5s all;
         }
       }
       .action-about {
@@ -63,6 +64,7 @@
 
         &:hover {
           opacity: 1;
+          transition: 0.5s all;
         }
       }
     }
@@ -96,9 +98,31 @@
 
 @media screen and (max-width: 813px) {
   .video-section {
-    padding: 80px;
+    padding: 50px;
     .content {
+      h3 {
+        font-size: 70px;
+      }
+      .content-description {
+        p {
+          &:first-child {
+            font-size: 25px;
+          }
+          &:last-child {
+            font-size: 12px;
+          }
+        }
+      }
+      .content-action {
+        button {
+          font-size: 12px;
+        }
+      }
       .content-resume {
+        font-size: 14px;
+        h6 {
+          font-size: 18px;
+        }
         .content-resume-card {
           flex-direction: column;
           justify-content: center;

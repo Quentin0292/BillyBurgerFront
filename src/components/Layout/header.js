@@ -1,8 +1,7 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React, { Component } from "react"
 import Logo from "../../images/logo-red.png"
-import { FaBars, FaBookOpen } from "react-icons/fa"
+import { FaBookOpen } from "react-icons/fa"
 
 class Header extends Component {
   constructor(props) {
@@ -40,13 +39,19 @@ class Header extends Component {
               <Link to="#">Shop</Link>
             </li>
             <li>
-              <Link to="#">Gift Cards</Link>
+              <Link to="#">delivery</Link>
             </li>
             <li>
-              <Link to="#">Food Track</Link>
+              <Link to="#">offers</Link>
+            </li>
+            <li>
+              <Link to="#">reviews</Link>
             </li>
             <li>
               <Link to="#">Email Club</Link>
+            </li>
+            <li>
+              <Link to="#">news</Link>
             </li>
             <li>
               <Link to="#">Contact</Link>

@@ -3,3 +3,4 @@ Todo :
 - change dessert's picture
 - create menu page
 - upload video
+- integrer le logo dans la nav bar avec gatsby image

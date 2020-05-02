@@ -1,17 +1,18 @@
 .video-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 120px;
+
   color: white;
-  display: grid;
-  grid-template-columns: 60% 40%;
-  height: 95vh;
-
+  background-color: #0e0c0d;
   .content {
-    padding: 10vh 10vw;
-
     h3 {
       font-family: "Passion One", cursive;
-      font-size: 6em;
-      color: #00a950;
+      font-size: 90px;
+      letter-spacing: 2px;
       text-transform: uppercase;
+
+      color: #00a950;
     }
     .content-description {
       p {
@@ -21,112 +22,97 @@
           color: #ff8e29;
         }
         &:first-child {
-          font-size: 2.3em;
+          font-size: 45px;
           text-transform: uppercase;
           font-family: "Passion One", cursive;
           color: #a1cf67;
         }
         &:last-child {
-          padding: 1.5em 0;
           font-family: "Poppins", sans-serif;
-          font-size: 0.8em;
+          font-size: 14px;
           opacity: 0.4;
         }
       }
     }
     .content-action {
-      margin-bottom: 3em;
+      padding: 40px 10px;
       button {
-        margin-top: 2em;
         font-family: "Passion One", cursive;
-        font-size: 1em;
+        font-size: 18px;
         text-transform: uppercase;
         padding: 9px 18px;
         color: white;
-        border: none;
         border-radius: 12px;
         cursor: pointer;
         outline: none;
       }
       .action-video {
         background-color: #00a950;
-        margin-right: 2em;
+        border: 1px solid #00a950;
+        margin-right: 10px;
+
+        &:hover {
+          background-color: #0e0c0d;
+          color: #00a950;
+        }
       }
       .action-about {
         background-color: transparent;
         opacity: 0.5;
-        border: 0.04em solid grey;
+        border: 1px solid grey;
+
+        &:hover {
+          opacity: 1;
+        }
       }
     }
     .content-resume {
-      display: flex;
-      flex-direction: column;
       h6 {
         text-transform: uppercase;
         font-family: "Passion One", cursive;
         opacity: 0.4;
-        font-size: 0.9em;
+        font-size: 20px;
+        margin-bottom: 15px;
       }
       .content-resume-card {
         display: flex;
         justify-content: space-between;
-        width: 120%;
         font-family: "Passion One", cursive;
         text-transform: uppercase;
         color: #ff8e29;
         .card-item {
           display: flex;
-          justify-content: space-between;
-          padding: 2em 1em;
           align-items: center;
-          p {
-            width: 60%;
-          }
+          padding: 5px;
         }
       }
       svg {
-        font-size: 3.5em;
+        font-size: 50px;
+        margin-right: 10px;
       }
-    }
-  }
-
-  .pictures {
-    display: flex;
-    justify-content: flex-end;
-    height: 95vh;
-    img {
-      width: 100%;
-      height: auto;
     }
   }
 }
 
 @media screen and (max-width: 813px) {
   .video-section {
-    display: flex;
-    height: auto;
-    flex-direction: column;
+    padding: 80px;
     .content {
-      padding: 2em 2em;
-
       .content-resume {
         .content-resume-card {
           flex-direction: column;
           justify-content: center;
 
           .card-item {
-            padding: 2em 0;
+            padding: 10px 2px;
             justify-content: flex-start;
 
             p {
-              padding: 0 25px;
+              padding: 0 15px;
             }
           }
         }
       }
-    }
-    .pictures {
-      display: none;
     }
   }
 }

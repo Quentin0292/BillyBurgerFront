@@ -1,8 +1,6 @@
 import React from "react"
-// TODO : solutionner le problème du JPG (surement en passant par l'interface Gatsby Image)
-import BurgerPics from "../images/burger-section-video.jpg"
-import { GiCow, GiAnticlockwiseRotation, GiBarn } from "react-icons/gi"
-import { FiRefreshCw, FiTruck } from "react-icons/fi"
+import { GiCow } from "react-icons/gi"
+import { FiRefreshCw } from "react-icons/fi"
 import { IoIosLeaf } from "react-icons/io"
 
 const videoSection = () => {
@@ -16,9 +14,8 @@ const videoSection = () => {
             authenticity & values.<span>that satisfy the soul.</span>
           </p>
           <p>
-            Morbi sed molesuada leo. Nam quis lectus convallis, interdum lectus
-            sit amet, fringillia sem. In imperdiat non ultricies suspendisse ac
-            diam id elit.
+            Our menu includes carefully selected burger options suitable for
+            vegetarians and vegans as well as delicious fresh salads.
           </p>
         </div>
         <div className="content-action">
@@ -42,9 +39,6 @@ const videoSection = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="pictures">
-        <img src={BurgerPics} alt="" />
       </div>
     </div>
   )

@@ -1,19 +1,3 @@
-#video {
-  height: 95vh;
-  background-color: #0e0c0d;
-}
-
 #footer {
   height: 134vh;
-}
-
-@media screen and (max-width: 813px) {
-  #ingredient {
-    height: auto;
-    padding: 2em 2em;
-  }
-
-  #video {
-    height: auto;
-  }
 }

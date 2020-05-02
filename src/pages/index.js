@@ -20,9 +20,7 @@ const IndexPage = () => (
     <LocationAndFranchise />
     <Menu />
     <Ingredients />
-    <section id="video">
-      <VideoSection />
-    </section>
+    <VideoSection />
 
     {/* <Link to="/menu/">Go to menu</Link> */}
   </Layout>

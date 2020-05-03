@@ -12,6 +12,24 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-source-mongodb`,
+      options: {
+        dbName: `test`,
+        collection: `burgers`,
+        server: {
+          address: "cluster0-shard-00-02-p98fb.mongodb.net",
+          port: 27017,
+        },
+        auth: { user: "admin", password: "Lensois.62" },
+        extraParams: {
+          replicaSet: "Cluster0-shard-0",
+          ssl: true,
+          authSource: `admin`,
+          retryWrites: true,
+        },
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

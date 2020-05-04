@@ -1,6 +1,6 @@
 nav {
   display: flex;
-  position: fixed;
+  // position: fixed;
   justify-content: space-between;
   align-items: center;
   padding: 10px 44px;
@@ -9,7 +9,6 @@ nav {
   letter-spacing: 1.5px;
 
   width: 100%;
-  z-index: 99; // not very good
   font-family: "Passion One", cursive;
   background-color: #f1c40f;
   transition: height 0.25s;
@@ -17,11 +16,14 @@ nav {
 
   #menu-open {
     position: absolute;
-    right: 5%;
+    right: 10%;
+    top: 3%;
+    z-index: 999;
     display: none;
 
     .icon {
       svg {
+        position: fixed;
         width: 32px;
         height: 32px;
         color: wheat !important;

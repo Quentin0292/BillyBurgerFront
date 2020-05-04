@@ -1,79 +1,166 @@
 import { Link } from "gatsby"
 import React, { Component } from "react"
 import Logo from "../../images/logo-red.png"
-import { FaBookOpen } from "react-icons/fa"
+import { FaBookOpen, FaThumbsDown } from "react-icons/fa"
+import Sidebar from "react-sidebar"
+import { Hamburger } from "../icons"
+import { RiInstagramLine, RiFacebookCircleLine } from "react-icons/ri"
+
+function SidebarContents() {
+  return (
+    <div className="sidebar-contents">
+      <div className="logo">
+        <Link to="#">
+          <img src={Logo} alt="" />
+        </Link>
+      </div>
+      <div className="links text-secondary">
+        <ul className="navbar-links">
+          <li>
+            <Link to="#">Shop</Link>
+          </li>
+          <li>
+            <Link to="#">delivery</Link>
+          </li>
+          <li>
+            <Link to="#">offers</Link>
+          </li>
+          <li>
+            <Link to="#">reviews</Link>
+          </li>
+          {/* <li>
+            <Link to="#">news</Link>
+          </li> */}
+          <li>
+            <Link to="#">Contact</Link>
+          </li>
+          <li>
+            <Link to="page2" className="menu">
+              <span>Menu</span> <FaBookOpen />
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <div className="links social-links">
+        <li>
+          <Link to="#">
+            <RiInstagramLine />
+          </Link>
+        </li>
+        <li>
+          <Link to="#">
+            <RiFacebookCircleLine />
+          </Link>
+        </li>
+      </div>
+    </div>
+  )
+}
 
 class Header extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      active: false,
+      sidebarOpen: false,
     }
+
+    this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this)
+    this.menuOpen = this.menuOpen.bind(this)
   }
 
-  toggleActive = () => {
-    this.setState(prevState => ({ active: !prevState.active }))
+  onSetSidebarOpen(open) {
+    this.setState({ sidebarOpen: open })
+  }
+  menuOpen(event) {
+    event.preventDefault()
+    this.onSetSidebarOpen(true)
+  }
 
-    const navLinks = document.querySelectorAll(".nav-links li")
-    navLinks.forEach((link, index) => {
-      if (link.style.animation) {
-        link.style.animation = ""
+  componentDidMount() {
+    this.changeNavBarHeight()
+  }
+
+  changeNavBarHeight() {
+    window.addEventListener("scroll", () => {
+      if (this.scrollY > 0) {
+        document.querySelector("nav").classList.add("scrolled")
       } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 +
-          0.7}s`
+        document.querySelector("nav").classList.remove("scrolled")
       }
     })
   }
 
   render() {
     return (
-      <header>
-        <nav>
-          <div className="logo">
-            <Link to="#">
-              <img src={Logo} alt="" />
-            </Link>
-          </div>
-          <ul className={`nav-links ${this.state.active ? "nav-active" : ""}`}>
-            <li>
-              <Link to="#">Shop</Link>
-            </li>
-            <li>
-              <Link to="#">delivery</Link>
-            </li>
-            <li>
-              <Link to="#">offers</Link>
-            </li>
-            <li>
-              <Link to="#">reviews</Link>
-            </li>
-            <li>
-              <Link to="#">Email Club</Link>
-            </li>
-            <li>
-              <Link to="#">news</Link>
-            </li>
-            <li>
-              <Link to="#">Contact</Link>
-            </li>
-            <li>
-              <Link to="#" className="menu">
-                Menu <FaBookOpen className="menu-logo" />
+      <React.Fragment>
+        <Sidebar
+          sidebar={<SidebarContents />}
+          open={this.state.sidebarOpen}
+          onSetOpen={this.onSetSidebarOpen}
+          sidebarClassName="sidebar-content"
+          styles={{
+            sidebar: {
+              zIndex: 101,
+              position: "fixed",
+            },
+            overlay: {
+              zIndex: 100,
+            },
+            dragHandle: {
+              position: "fixed",
+              zIndex: "99999",
+            },
+          }}
+          pullRight={true}
+        >
+          <nav className="text-secondary">
+            <div className="logo">
+              <Link to="#">
+                <img src={Logo} alt="" />
               </Link>
-            </li>
-          </ul>
-          <div
-            className={`burger ${this.state.active ? "toggle" : ""}`}
-            onClick={this.toggleActive}
-          >
-            <div className="line1"></div>
-            <div className="line2"></div>
-            <div className="line3"></div>
-          </div>
-        </nav>
-      </header>
+            </div>
+            <ul>
+              <li>
+                <Link to="#">Shop</Link>
+              </li>
+              <li>
+                <Link to="#">delivery</Link>
+              </li>
+              <li>
+                <Link to="#">offers</Link>
+              </li>
+              <li>
+                <Link to="#">reviews</Link>
+              </li>
+              {/* <li>
+            <Link to="#">news</Link>
+          </li> */}
+              <li>
+                <Link to="#">Contact</Link>
+              </li>
+              <li>
+                <Link to="page2" className="menu">
+                  <span>Menu</span> <FaBookOpen />
+                </Link>
+              </li>
+            </ul>
+            <a href="#mobilenav" id="menu-open" onClick={this.menuOpen}>
+              <span className="icon">
+                <Hamburger style={{ color: "white" }} />
+              </span>
+            </a>
+          </nav>
+        </Sidebar>
+        {/* <a href='#' onClick={this.menuOpen}>
+          <span>click me</span>
+        </a> */}
+      </React.Fragment>
     )
   }
 }
 
 export default Header
+
+// <a href="#">
+//                 <Hamburger />
+//               </a>

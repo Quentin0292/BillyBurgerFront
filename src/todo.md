@@ -4,3 +4,5 @@ Todo :
 - create menu page
 - upload video
 - integrer le logo dans la nav bar avec gatsby image
+
+

@@ -1,12 +1,13 @@
 nav {
   display: flex;
-  // position: fixed;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   padding: 10px 44px;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+  z-index: 99; // not very good
 
   width: 100%;
   font-family: "Passion One", cursive;
@@ -16,17 +17,13 @@ nav {
 
   #menu-open {
     position: absolute;
-    right: 10%;
-    top: 3%;
-    z-index: 999;
+    right: 5%;
     display: none;
 
     .icon {
       svg {
-        position: fixed;
         width: 32px;
         height: 32px;
-        color: wheat !important;
       }
     }
   }
@@ -39,12 +36,34 @@ nav {
     align-items: center;
     li {
       a {
-        // margin: 0 10px;
         padding: 14px;
-
         position: relative;
         text-decoration: none;
         color: #9a2522;
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 36px;
+          height: 36px;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%) scale(0);
+          border-radius: 50%;
+          opacity: 0.2;
+          transition: transform 0.25s;
+        }
+
+        &.active:before,
+        &:focus:before,
+        &:hover:before {
+          transform: translate(-50%, -50%) scale(1);
+        }
+
+        span {
+          position: relative;
+          z-index: 2;
+        }
       }
       .menu {
         justify-content: flex-start;
@@ -116,17 +135,19 @@ nav {
       }
       .navbar-links {
         .menu {
-          div {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding: 12px 0;
-            border: 2px solid #9a2522;
-            border-radius: 10px;
-            &:hover {
-              background-color: #9a2522;
-              color: #fff;
-            }
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          padding: 12px 8px;
+          border: 2px solid #9a2522;
+          border-radius: 10px;
+          &:hover {
+            background-color: #9a2522;
+            color: #fff;
+          }
+
+          span {
+            margin-right: 4px;
           }
         }
       }
@@ -155,7 +176,7 @@ nav {
     justify-content: center;
 
     img {
-      width: 140px;
+      width: 160px;
     }
 
     ul {

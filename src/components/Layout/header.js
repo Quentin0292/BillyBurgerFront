@@ -28,9 +28,6 @@ function SidebarContents() {
           <li>
             <Link to="#">reviews</Link>
           </li>
-          {/* <li>
-            <Link to="#">news</Link>
-          </li> */}
           <li>
             <Link to="#">Contact</Link>
           </li>
@@ -113,47 +110,42 @@ class Header extends Component {
           }}
           pullRight={true}
         >
-          <nav className="text-secondary">
-            <div className="logo">
-              <Link to="#">
-                <img src={Logo} alt="" />
-              </Link>
-            </div>
-            <ul>
-              <li>
-                <Link to="#">Shop</Link>
-              </li>
-              <li>
-                <Link to="#">delivery</Link>
-              </li>
-              <li>
-                <Link to="#">offers</Link>
-              </li>
-              <li>
-                <Link to="#">reviews</Link>
-              </li>
-              {/* <li>
-            <Link to="#">news</Link>
-          </li> */}
-              <li>
-                <Link to="#">Contact</Link>
-              </li>
-              <li>
-                <Link to="page2" className="menu">
-                  <span>Menu</span> <FaBookOpen />
-                </Link>
-              </li>
-            </ul>
-            <a href="#mobilenav" id="menu-open" onClick={this.menuOpen}>
-              <span className="icon">
-                <Hamburger style={{ color: "white" }} />
-              </span>
-            </a>
-          </nav>
+          <span></span>
         </Sidebar>
-        {/* <a href='#' onClick={this.menuOpen}>
-          <span>click me</span>
-        </a> */}
+        <nav className="text-secondary">
+          <div className="logo">
+            <Link to="#">
+              <img src={Logo} alt="" />
+            </Link>
+          </div>
+          <ul>
+            <li>
+              <Link to="#">Shop</Link>
+            </li>
+            <li>
+              <Link to="#">delivery</Link>
+            </li>
+            <li>
+              <Link to="#">offers</Link>
+            </li>
+            <li>
+              <Link to="#">reviews</Link>
+            </li>
+            <li>
+              <Link to="#">Contact</Link>
+            </li>
+            <li>
+              <Link to="page2" className="menu">
+                <span>Menu</span> <FaBookOpen />
+              </Link>
+            </li>
+          </ul>
+          <a href="#mobilenav" id="menu-open" onClick={this.menuOpen}>
+            <span className="icon">
+              <Hamburger />
+            </span>
+          </a>
+        </nav>
       </React.Fragment>
     )
   }

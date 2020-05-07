@@ -17,8 +17,6 @@ const IndexPage = () => (
     <Menu />
     <Ingredients />
     <VideoSection />
-
-    {/* <Link to="/menu/">Go to menu</Link> */}
   </Layout>
 )
 

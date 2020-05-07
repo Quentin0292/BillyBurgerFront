@@ -25,7 +25,6 @@ const homeContent = () => {
           onion relish, tomato, rocket and pickles with homemade rosemary salted
           chips
         </p>
-        <Link to="/page2">page 2 </Link>
 
         <div className="home-ingredient">
           <h4>Ingredients</h4>

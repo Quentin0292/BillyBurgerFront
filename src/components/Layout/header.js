@@ -32,7 +32,7 @@ function SidebarContents() {
             <Link to="#">Contact</Link>
           </li>
           <li>
-            <Link to="page2" className="menu">
+            <Link to="menu" className="menu">
               <span>Menu</span> <FaBookOpen />
             </Link>
           </li>
@@ -121,7 +121,7 @@ class Header extends Component {
               <Link to="#">Contact</Link>
             </li>
             <li>
-              <Link to="page2" className="menu">
+              <Link to="menu" className="menu">
                 <span>Menu</span> <FaBookOpen />
               </Link>
             </li>

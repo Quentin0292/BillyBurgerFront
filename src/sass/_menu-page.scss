@@ -1,0 +1,19 @@
+#menu {
+  // margin-top: 0px;
+  padding: 160px 60px;
+  background-color: #ecf0f1;
+
+  h1 {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: "Passion One", cursive;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #menu {
+    padding: 160px 35px;
+  }
+}

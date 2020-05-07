@@ -2,18 +2,16 @@ import React from "react"
 import Ingredients from "../components/Images/Ingredients"
 import Layout from "../components/Layout/layout"
 import { graphql } from "gatsby"
-import { Hamburger } from "../components/icons"
+import BurgerMenu from "../components/MenuPage/burger"
 
 const page2 = props => {
   const burgers = props.data.allMongodbTestBurgers.edges
   return (
-    <div>
-      <Hamburger />
-      welcome to page 2 and our burger name
-      {burgers.map(burger => (
-        <h2>{burger.node.name}</h2>
-      ))}
-    </div>
+    <Layout>
+      <div id="menu">
+        <BurgerMenu allBurgers={burgers} />
+      </div>
+    </Layout>
   )
 }
 
@@ -25,6 +23,9 @@ export const pageQuery = graphql`
       edges {
         node {
           name
+          price
+          desc
+          imageURL
         }
       }
     }

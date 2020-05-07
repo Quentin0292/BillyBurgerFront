@@ -11,7 +11,7 @@ nav {
 
   width: 100%;
   font-family: "Passion One", cursive;
-  background-color: #f1c40f;
+  background-color: #eccc68;
   transition: height 0.25s;
   border-bottom: 2px solid #9a2522;
 
@@ -30,6 +30,11 @@ nav {
 
   img {
     width: 220px;
+  }
+
+  .hide-logo {
+    display: none;
+    transition: all 1.9s ease;
   }
   ul {
     display: flex;
@@ -71,14 +76,8 @@ nav {
         padding: 8px 35px;
         border: 2px solid #9a2522;
         border-radius: 10px;
-
-        &:hover {
-          background-color: #9a2522;
-          color: #f1c40f;
-          transition: 0.5s all;
-        }
-        // align-items: center;
-
+        background-color: #9a2522;
+        color: #f1c40f;
         span {
           margin-right: 4px;
         }
@@ -141,10 +140,8 @@ nav {
           padding: 12px 8px;
           border: 2px solid #9a2522;
           border-radius: 10px;
-          &:hover {
-            background-color: #9a2522;
-            color: #fff;
-          }
+          background-color: #9a2522;
+          color: #fff;
 
           span {
             margin-right: 4px;

@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React, { Component } from "react"
 import Logo from "../../images/logo-red.png"
-import { FaBookOpen, FaThumbsDown } from "react-icons/fa"
+import { FaBookOpen } from "react-icons/fa"
 import Sidebar from "react-sidebar"
 import { Hamburger } from "../icons"
 import { RiInstagramLine, RiFacebookCircleLine } from "react-icons/ri"
@@ -73,20 +73,6 @@ class Header extends Component {
     this.onSetSidebarOpen(true)
   }
 
-  componentDidMount() {
-    this.changeNavBarHeight()
-  }
-
-  changeNavBarHeight() {
-    window.addEventListener("scroll", () => {
-      if (this.scrollY > 0) {
-        document.querySelector("nav").classList.add("scrolled")
-      } else {
-        document.querySelector("nav").classList.remove("scrolled")
-      }
-    })
-  }
-
   render() {
     return (
       <React.Fragment>
@@ -113,7 +99,7 @@ class Header extends Component {
           <span></span>
         </Sidebar>
         <nav className="text-secondary">
-          <div className="logo">
+          <div className={`logo ${this.state.sidebarOpen ? "hide-logo" : ""}`}>
             <Link to="#">
               <img src={Logo} alt="" />
             </Link>
@@ -152,7 +138,3 @@ class Header extends Component {
 }
 
 export default Header
-
-// <a href="#">
-//                 <Hamburger />
-//               </a>

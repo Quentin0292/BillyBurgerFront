@@ -1,19 +1,33 @@
 #menu {
-  // margin-top: 0px;
-  padding: 160px 60px;
+  font-family: sans-serif;
+  padding: 180px 100px;
   background-color: #ecf0f1;
 
-  h1 {
-    padding-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    font-family: "Passion One", cursive;
+  h3 {
+    font-size: 20px;
     text-transform: uppercase;
+    border-top: 2px solid #9a2522;
+    border-bottom: 2px solid #9a2522;
+    padding: 20px 0px;
+    color: #9a2522;
+
+    span {
+      color: #353b48;
+      text-transform: lowercase;
+      font-size: 16px;
+    }
   }
 }
 
 @media only screen and (max-width: 800px) {
   #menu {
     padding: 160px 35px;
+
+    h3 {
+      font-size: 16px;
+      span {
+        font-size: 12px;
+      }
+    }
   }
 }

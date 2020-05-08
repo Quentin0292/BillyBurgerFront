@@ -15,7 +15,16 @@ module.exports = {
       resolve: `gatsby-source-mongodb`,
       options: {
         dbName: `test`,
-        collection: [`burgers`, `beers`, `fries`, `salads`, `upload_file`],
+        collection: [
+          `burgers`,
+          `beers`,
+          `fries`,
+          `salads`,
+          `upload_file`,
+          `sauces`,
+          `free_sides`,
+          `toppings`,
+        ],
         server: {
           address: "cluster0-shard-00-02-p98fb.mongodb.net",
           port: 27017,

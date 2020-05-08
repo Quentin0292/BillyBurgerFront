@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 const burger = props => {
   // display data via props
-  console.log(props.allBurgers)
+  // console.log(props.allBurgers)
   return (
     <div id="burger-menu">
       <div className="all-burgers">

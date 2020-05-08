@@ -2,11 +2,12 @@
   font-family: sans-serif;
 
   .all-burgers {
+    border: 1px solid ridge;
     display: flex;
     justify-content: space-between;
 
     flex-wrap: wrap;
-    padding: 80px 0;
+    padding: 80px 20px;
 
     .burger-card {
       max-width: 350px;

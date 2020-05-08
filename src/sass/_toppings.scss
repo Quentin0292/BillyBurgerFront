@@ -18,7 +18,9 @@
 }
 
 @media only screen and (max-width: 800px) {
-  #toppings-menu {
+  #toppings-menu,
+  #sauces-menu,
+  #freesides-menu {
     ul {
       columns: 2;
       -webkit-columns: 2;

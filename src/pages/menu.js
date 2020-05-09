@@ -28,7 +28,7 @@ const page2 = props => {
         </em>
         <BurgerMenu allBurgers={burgers} />
         <h3>
-          1<small>bis</small>. Maybe u want fresh salads ?{" "}
+          1<small>bis</small>. Maybe u want fresh salads instead ?{" "}
           <span>include 1 free side and 2 free sauces</span>
         </h3>
         <SaladMenu allSalads={salads} />
@@ -71,6 +71,7 @@ export const pageQuery = graphql`
           name
           price
           description
+          imageURL
         }
       }
     }

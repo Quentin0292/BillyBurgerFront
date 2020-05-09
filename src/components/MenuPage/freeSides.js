@@ -1,16 +1,29 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
-const freeSides = props => {
-  console.log(props.allFreeSides)
+export default () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allMongodbTestFreeSides {
+        edges {
+          node {
+            name
+            id
+          }
+        }
+      }
+    }
+  `)
+
+  const allFreeSides = data.allMongodbTestFreeSides.edges
+
   return (
     <div id="freesides-menu">
       <ul>
-        {props.allFreeSides.map(freeSide => (
-          <li>{freeSide.node.name}</li>
+        {allFreeSides.map(freeSide => (
+          <li key={freeSide.node.id}>{freeSide.node.name}</li>
         ))}
       </ul>
     </div>
   )
 }
-
-export default freeSides

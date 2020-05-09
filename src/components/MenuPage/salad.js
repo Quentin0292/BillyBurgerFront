@@ -1,22 +1,38 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
-const salad = props => {
-  // display data via props
-  // console.log(props.allBurgers)
+export default () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allMongodbTestSalads {
+        edges {
+          node {
+            name
+            price
+            description
+            imageURL
+          }
+        }
+      }
+    }
+  `)
+
+  const allSalads = data.allMongodbTestSalads.edges
+
   return (
     <div id="burger-menu">
       <div className="all-burgers">
-        {props.allSalads.map(burger => (
-          <div className="burger-card" key={burger.node.id}>
+        {allSalads.map(salad => (
+          <div className="burger-card" key={salad.node.id}>
             <div className="burger-picture">
-              <img src={burger.node.imageURL} alt="burger" />
+              <img src={salad.node.imageURL} alt="burger" />
             </div>
             <div className="burger-info">
-              <h4>{burger.node.name}</h4>
-              <p>{burger.node.description}</p>
+              <h4>{salad.node.name}</h4>
+              <p>{salad.node.description}</p>
             </div>
             <div className="burger-order">
-              <span>{burger.node.price} $</span>
+              <span>{salad.node.price} $</span>
               <span className="btn-order">To Order</span>
             </div>
           </div>
@@ -25,5 +41,3 @@ const salad = props => {
     </div>
   )
 }
-
-export default salad

@@ -23,7 +23,7 @@ const Menu = () => {
             <button>View Menu</button>
           </div>
           <div className="picture">
-            <img src={Sandwiches} alt="" />
+            <img src={Sandwiches} alt="sandwiches" />
           </div>
         </div>
         <div className="menu-burger">
@@ -41,7 +41,7 @@ const Menu = () => {
             <button>View Menu</button>
           </div>
           <div className="picture">
-            <img src={Burger} alt="" />
+            <img src={Burger} alt="burger" />
           </div>
         </div>
         <div className="menu-salads">
@@ -58,7 +58,7 @@ const Menu = () => {
             <button>View Menu</button>
           </div>
           <div className="picture">
-            <img src={Salad} alt="" />
+            <img src={Salad} alt="salad" />
           </div>
         </div>
       </div>
@@ -78,7 +78,7 @@ const Menu = () => {
             <button>View Menu</button>
           </div>
           <div className="picture">
-            <img src={HotDog} alt="" />
+            <img src={HotDog} alt="hot-dog" />
           </div>
         </div>
         <div className="menu-desserts">
@@ -95,7 +95,7 @@ const Menu = () => {
             <button>View Menu</button>
           </div>
           <div className="picture">
-            <img src={IceCream} alt="" />
+            <img src={IceCream} alt="ice-cream" />
           </div>
         </div>
         <div className="menu-more">

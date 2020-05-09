@@ -1,16 +1,29 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
-const sauces = props => {
-  console.log(props.allSauces)
+export default () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allMongodbTestSauces {
+        edges {
+          node {
+            name
+            id
+          }
+        }
+      }
+    }
+  `)
+
+  const allSauces = data.allMongodbTestSauces.edges
+
   return (
     <div id="sauces-menu">
       <ul>
-        {props.allSauces.map(sauce => (
-          <li>{sauce.node.name}</li>
+        {allSauces.map(sauce => (
+          <li key={sauce.node.id}>{sauce.node.name}</li>
         ))}
       </ul>
     </div>
   )
 }
-
-export default sauces

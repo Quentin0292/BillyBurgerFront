@@ -1,19 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
-import { graphql } from "gatsby"
 import BurgerMenu from "../components/MenuPage/burger"
 import SaladMenu from "../components/MenuPage/salad"
 import Toppings from "../components/MenuPage/toppings"
 import Sauces from "../components/MenuPage/sauces"
 import FreeSides from "../components/MenuPage/freeSides"
 
-const page2 = props => {
-  // keep all data from mongodb with graphql and send via props in my burgerMenu component
-  const burgers = props.data.allMongodbTestBurgers.edges
-  const salads = props.data.allMongodbTestSalads.edges
-  const toppings = props.data.allMongodbTestToppings.edges
-  const sauces = props.data.allMongodbTestSauces.edges
-  const freeSides = props.data.allMongodbTestFreeSides.edges
+export default () => {
   return (
     <Layout>
       <div id="menu">
@@ -26,78 +19,27 @@ const page2 = props => {
           reared cattle on independent farms. We cook to medium but please tell
           us how you like it.
         </em>
-        <BurgerMenu allBurgers={burgers} />
+        <BurgerMenu />
         <h3>
           1<small>bis</small>. Maybe u want fresh salads instead ?{" "}
           <span>include 1 free side and 2 free sauces</span>
         </h3>
-        <SaladMenu allSalads={salads} />
+        <SaladMenu />
         <h3>
           2. Choose your toppings <span>0.80$ each or 3 for 1.95$</span>
         </h3>
-        <Toppings allToppings={toppings} />
+        <Toppings />
         <h3>
           3. Choose your 2 free sauces{" "}
           <span>served on the side - extra sauces 0.50$ each</span>
         </h3>
-        <Sauces allSauces={sauces} />
+        <Sauces />
         <h3>
           4. Choose 1 Free side{" "}
           <span>additional sides 1.95$ each, *1.50$ surcharge</span>
         </h3>
-        <FreeSides allFreeSides={freeSides} />
+        <FreeSides />
       </div>
     </Layout>
   )
 }
-
-export default page2
-
-export const pageQuery = graphql`
-  query {
-    allMongodbTestBurgers {
-      edges {
-        node {
-          name
-          price
-          desc
-          imageURL
-        }
-      }
-    }
-    allMongodbTestSalads {
-      edges {
-        node {
-          name
-          price
-          description
-          imageURL
-        }
-      }
-    }
-    allMongodbTestToppings {
-      edges {
-        node {
-          name
-          id
-        }
-      }
-    }
-    allMongodbTestSauces {
-      edges {
-        node {
-          name
-          id
-        }
-      }
-    }
-    allMongodbTestFreeSides {
-      edges {
-        node {
-          name
-          id
-        }
-      }
-    }
-  }
-`

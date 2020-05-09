@@ -1,16 +1,29 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
-const toppings = props => {
-  console.log(props.allToppings)
+export default () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allMongodbTestToppings {
+        edges {
+          node {
+            name
+            id
+          }
+        }
+      }
+    }
+  `)
+
+  const allToppings = data.allMongodbTestToppings.edges
+
   return (
     <div id="toppings-menu">
       <ul>
-        {props.allToppings.map(topping => (
-          <li>{topping.node.name}</li>
+        {allToppings.map(topping => (
+          <li key={topping.node.id}>{topping.node.name}</li>
         ))}
       </ul>
     </div>
   )
 }
-
-export default toppings

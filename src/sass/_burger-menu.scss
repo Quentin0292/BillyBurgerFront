@@ -32,6 +32,13 @@
           color: #353b48;
           padding: 8px 0;
           font-size: 18px;
+
+          span {
+            // text-align: end;
+            // display: inline-block;
+            text-transform: initial;
+            color: #27ae60;
+          }
         }
         p {
           opacity: 0.5;

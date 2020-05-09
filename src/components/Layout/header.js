@@ -10,29 +10,29 @@ function SidebarContents() {
   return (
     <div className="sidebar-contents">
       <div className="logo">
-        <Link to="#">
-          <img src={Logo} alt="" />
+        <Link to="/">
+          <img src={Logo} alt="Billy Burger's logo" />
         </Link>
       </div>
       <div className="links text-secondary">
         <ul className="navbar-links">
           <li>
-            <Link to="#">Shop</Link>
+            <Link to="/shop">Shop</Link>
           </li>
           <li>
-            <Link to="#">delivery</Link>
+            <Link to="/delivery">delivery</Link>
           </li>
           <li>
-            <Link to="#">offers</Link>
+            <Link to="/offers">offers</Link>
           </li>
           <li>
-            <Link to="#">reviews</Link>
+            <Link to="/reviews">reviews</Link>
           </li>
           <li>
-            <Link to="#">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <Link to="menu" className="menu">
+            <Link to="/menu" className="menu">
               <span>Menu</span> <FaBookOpen />
             </Link>
           </li>
@@ -40,14 +40,22 @@ function SidebarContents() {
       </div>
       <div className="links social-links">
         <li>
-          <Link to="#">
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <RiInstagramLine />
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="#">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <RiFacebookCircleLine />
-          </Link>
+          </a>
         </li>
       </div>
     </div>
@@ -100,28 +108,28 @@ class Header extends Component {
         </Sidebar>
         <nav className="text-secondary">
           <div className={`logo ${this.state.sidebarOpen ? "hide-logo" : ""}`}>
-            <Link to="#">
-              <img src={Logo} alt="" />
+            <Link to="/">
+              <img src={Logo} alt="Billy Burger's logo" />
             </Link>
           </div>
           <ul>
             <li>
-              <Link to="#">Shop</Link>
+              <Link to="/shop">Shop</Link>
             </li>
             <li>
-              <Link to="#">delivery</Link>
+              <Link to="/delivery">delivery</Link>
             </li>
             <li>
-              <Link to="#">offers</Link>
+              <Link to="/offers">offers</Link>
             </li>
             <li>
-              <Link to="#">reviews</Link>
+              <Link to="/reviews">reviews</Link>
             </li>
             <li>
-              <Link to="#">Contact</Link>
+              <Link to="/contact">Contact</Link>
             </li>
             <li>
-              <Link to="menu" className="menu">
+              <Link to="/menu" className="menu">
                 <span>Menu</span> <FaBookOpen />
               </Link>
             </li>

@@ -24,6 +24,8 @@ const Layout = ({ children }) => {
     }
   `)
 
+  // todo: use this data
+  console.log(data)
   return (
     <>
       <Header />

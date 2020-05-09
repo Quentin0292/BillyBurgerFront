@@ -1,8 +1,20 @@
 import React from "react"
 import { FaCheckCircle } from "react-icons/fa"
-import Picture from "../components/Images/Ingredients"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
-const Ingredients = () => {
+export default () => {
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(relativePath: { eq: "ingredients.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
   return (
     <div className="ingredients-section">
       <h1>
@@ -10,7 +22,7 @@ const Ingredients = () => {
         <span>ingredients</span>
       </h1>
       <div className="ingredients-picture">
-        <Picture />
+        <Img fluid={data.placeholderImage.childImageSharp.fluid} />
       </div>
       <div className="ingredients-list">
         <div className="ingredients-information">
@@ -71,5 +83,3 @@ const Ingredients = () => {
     </div>
   )
 }
-
-export default Ingredients

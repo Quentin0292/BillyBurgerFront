@@ -1,12 +1,24 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
-import { Link } from "gatsby"
 import { GiShinyApple } from "react-icons/gi"
 import { FaPagelines, FaPepperHot } from "react-icons/fa"
 import { IoMdEgg } from "react-icons/io"
-import Image from "../components/Images/homeBurger"
 
-const homeContent = () => {
+export default () => {
+  const query = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(relativePath: { eq: "burger-test.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <div className="home-content">
       <section className="home-info">
@@ -46,7 +58,7 @@ const homeContent = () => {
       </section>
       <section className="home-photo">
         <div className="home-burger">
-          <Image />
+          <Img fluid={query.placeholderImage.childImageSharp.fluid} />
         </div>
         <div className="home-nutrition">
           <div className="home-nutrition-card">
@@ -76,5 +88,3 @@ const homeContent = () => {
     </div>
   )
 }
-
-export default homeContent

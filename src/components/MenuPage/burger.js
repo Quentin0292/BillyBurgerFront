@@ -20,13 +20,10 @@ export default () => {
 
   const allBurgers = data.allMongodbTestBurgers.edges
 
-  // console.log(allBurgers[4].node.vegan)
-
   return (
     <div id="burger-menu">
       <div className="all-burgers">
         {allBurgers.map(burger => {
-          console.log(`${burger.node.name} is {${burger.node.vegan} ? }`)
           return (
             <div className="burger-card" key={burger.node.id}>
               <div className="burger-picture">

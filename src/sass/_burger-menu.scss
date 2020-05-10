@@ -14,8 +14,6 @@
       background-color: #fff;
       border-radius: 10px;
       margin-bottom: 45px;
-      -webkit-box-shadow: 3px 3px 12px -2px rgba(0, 0, 0, 0.66);
-      -moz-box-shadow: 3px 3px 12px -2px rgba(0, 0, 0, 0.66);
       box-shadow: 3px 3px 12px -2px rgba(0, 0, 0, 0.66);
 
       img {
@@ -34,8 +32,7 @@
           font-size: 18px;
 
           span {
-            // text-align: end;
-            // display: inline-block;
+            font-size: 16px;
             text-transform: initial;
             color: #27ae60;
           }

@@ -38,10 +38,12 @@ nav {
   }
   ul {
     display: flex;
-    align-items: center;
     li {
+      display: flex;
+      align-items: center;
+      height: auto;
       a {
-        padding: 14px;
+        padding: 0 14px;
         position: relative;
         text-decoration: none;
         color: #9a2522;

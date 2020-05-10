@@ -17,7 +17,7 @@ function SidebarContents() {
       <div className="links text-secondary">
         <ul className="navbar-links">
           <li>
-            <Link to="/shop">Shop</Link>
+            <Link to="/location">location</Link>
           </li>
           <li>
             <Link to="/delivery">delivery</Link>
@@ -114,7 +114,7 @@ class Header extends Component {
           </div>
           <ul>
             <li>
-              <Link to="/shop">Shop</Link>
+              <Link to="/location">location</Link>
             </li>
             <li>
               <Link to="/delivery">delivery</Link>

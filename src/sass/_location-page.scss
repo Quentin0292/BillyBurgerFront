@@ -1,0 +1,88 @@
+#location {
+  display: flex;
+  flex-direction: column;
+
+  font-family: sans-serif;
+
+  padding: 115px 0px;
+
+  border-bottom: 2px solid #9a2522;
+  .hero-container {
+    background: url("../images/shop-photo.jpg") no-repeat center fixed;
+    background-size: cover;
+    height: 500px;
+    opacity: 0.9;
+    .hero-title {
+      display: flex;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 48px;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .location-container {
+    align-self: center;
+    padding: 40px 0;
+    width: 450px;
+
+    .location-resume {
+      text-align: center;
+      h2 {
+        text-transform: uppercase;
+        font-family: "Passion One", cursive;
+        padding: 30px 0;
+        color: #9a2522;
+        font-size: 52px;
+      }
+      .location-information {
+        padding: 15px 0;
+        display: flex;
+        flex-direction: column;
+        span {
+          padding-bottom: 8px;
+          color: #9a2522;
+        }
+      }
+      .location-text {
+        p {
+          &:nth-child(1) {
+            padding: 6px;
+          }
+          &:nth-child(2) {
+            text-transform: uppercase;
+            padding: 15px 0;
+          }
+          &:nth-child(3) {
+            padding: 10px 30px;
+            span {
+              color: #9a2522;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #location {
+    padding: 100px 0;
+
+    .hero-container {
+      .hero-title {
+        font-size: 22px;
+      }
+    }
+    .location-container {
+      width: 400px;
+
+      .location-resume {
+        h2 {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}

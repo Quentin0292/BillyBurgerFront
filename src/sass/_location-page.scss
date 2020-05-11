@@ -4,22 +4,30 @@
 
   font-family: sans-serif;
 
-  padding: 115px 0px;
+  // padding: 115px 0px;
 
   border-bottom: 2px solid #9a2522;
   .hero-container {
-    background: url("../images/shop-photo.jpg") no-repeat center fixed;
-    background-size: cover;
-    height: 500px;
-    opacity: 0.9;
+    display: inline-block;
+    position: relative;
+    width: auto;
+
+    height: 680px;
+
     .hero-title {
-      display: flex;
+      position: absolute;
+      z-index: 9;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      left: 0;
+      margin: 0;
+      padding: 0;
       color: #fff;
+      opacity: 1;
       text-transform: uppercase;
-      font-size: 48px;
-      height: 100%;
-      justify-content: center;
-      align-items: center;
+      font-family: "Passion One", cursive;
+      font-size: 56px;
     }
   }
   .location-container {
@@ -71,8 +79,11 @@
     padding: 100px 0;
 
     .hero-container {
+      border: 1px solid green;
+      height: auto;
       .hero-title {
-        font-size: 22px;
+        top: 40%;
+        font-size: 26px;
       }
     }
     .location-container {

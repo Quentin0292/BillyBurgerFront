@@ -1,8 +1,21 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
 import photo from "../images/shop-photo.jpg"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
-const shop = props => {
+export default () => {
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(relativePath: { eq: "shop-photo.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
   return (
     <Layout>
       <div id="location">
@@ -10,6 +23,12 @@ const shop = props => {
           <div className="hero-title">
             <h1>san francisco</h1>
           </div>
+          <Img
+            style={{ maxHeight: "100%", maxWidth: "100%", opacity: 0.9 }}
+            alt="billy burger restaurant"
+            fluid={data.placeholderImage.childImageSharp.fluid}
+            title="test"
+          />
         </div>
         <div className="location-container">
           <div className="location-resume">
@@ -38,5 +57,3 @@ const shop = props => {
     </Layout>
   )
 }
-
-export default shop

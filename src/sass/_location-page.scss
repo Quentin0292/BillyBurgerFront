@@ -3,6 +3,7 @@
   flex-direction: column;
 
   font-family: sans-serif;
+  background-color: #ecf0f1;
 
   // padding: 115px 0px;
 
@@ -32,7 +33,7 @@
   }
   .location-container {
     align-self: center;
-    padding: 40px 0;
+    padding: 60px 0;
     width: 450px;
 
     .location-resume {
@@ -56,14 +57,14 @@
       .location-text {
         p {
           &:nth-child(1) {
-            padding: 6px;
+            padding: 10px;
           }
           &:nth-child(2) {
             text-transform: uppercase;
-            padding: 15px 0;
+            padding: 20px 0;
           }
           &:nth-child(3) {
-            padding: 10px 30px;
+            padding: 16px 30px;
             span {
               color: #9a2522;
             }

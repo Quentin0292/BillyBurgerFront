@@ -39,6 +39,9 @@ export default () => {
           <span>additional sides 1.95$ each, *1.50$ surcharge</span>
         </h3>
         <FreeSides />
+        <div className="download-pdf">
+          <button>download pdf</button>
+        </div>
       </div>
     </Layout>
   )

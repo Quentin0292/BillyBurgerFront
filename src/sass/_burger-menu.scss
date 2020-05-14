@@ -58,6 +58,15 @@
   }
 }
 
+@media only screen and (min-width: 1650px){
+  #burger-menu {
+    // display: none;
+    .all-burgers {
+      padding: 80px 120px;
+    }
+  }
+}
+
 @media only screen and (max-width: 800px) {
   #burger-menu {
     .all-burgers {

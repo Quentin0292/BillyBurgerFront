@@ -34,14 +34,15 @@
   .location-container {
     align-self: center;
     padding: 60px 0;
-    width: 450px;
+    width: 550px;
 
     .location-resume {
       text-align: center;
       h2 {
         text-transform: uppercase;
-        font-family: "Passion One", cursive;
-        padding: 30px 0;
+        // font-family: "Passion One", cursive;
+        font-family: "Poppins", sans-serif;
+        padding: 30px 6px;
         color: #9a2522;
         font-size: 52px;
       }
@@ -51,6 +52,7 @@
         flex-direction: column;
         span {
           padding-bottom: 8px;
+          font-weight: bold;
           color: #9a2522;
         }
       }
@@ -61,11 +63,13 @@
           }
           &:nth-child(2) {
             text-transform: uppercase;
+            font-weight: bold;
             padding: 20px 0;
           }
           &:nth-child(3) {
             padding: 16px 30px;
             span {
+              font-weight: bold;
               color: #9a2522;
             }
           }
@@ -87,11 +91,12 @@
       }
     }
     .location-container {
-      width: 400px;
+      width: 100%;
 
       .location-resume {
         h2 {
-          font-size: 40px;
+          font-size: 38px;
+          padding: 10px 18px;
         }
       }
     }

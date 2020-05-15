@@ -3,7 +3,7 @@ import CardPicture from "../../images/card.jpg"
 
 export default () => {
   return (
-    <div id="contact" style={{ marginTop: `110px`, padding: `50px 80px` }}>
+    <section id="contact" style={{ marginTop: `110px` }}>
       <div className="contact-info">
         <div className="info">
           <span>questions, comments, praise or criticism</span>
@@ -92,7 +92,7 @@ export default () => {
                 </div>
               </label>
             </div>
-            <div className="field">
+            <div className="field submit-btn">
               <button type="submit" id="submit">
                 SEND
               </button>
@@ -108,9 +108,10 @@ export default () => {
           <p>Pay only $3 for parking next door with validation (1 hr max).</p>
         </div>
         <div className="info-card">
+          {/* TODO: integrer une vraie carte via une api  */}
           <img src={CardPicture} alt="" />
         </div>
       </div>
-    </div>
+    </section>
   )
 }

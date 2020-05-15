@@ -10,6 +10,7 @@ const review = props => {
           <h1>reviews</h1>
         </div>
         <div className="review-content">
+          {/* TODO : faire un component review card qui render automatiquement le contenu d'une review en fonction de ce qui est ajouté dans l'API */}
           <div className="review-card">
             <blockquote>
               <cite>
@@ -21,7 +22,7 @@ const review = props => {
                 exactly the same order. Pretty impressive.
               </cite>
             </blockquote>
-            <span>los angeles bites</span>
+            <span>- los angeles bites</span>
           </div>
           <div className="review-card">
             <blockquote>
@@ -31,7 +32,7 @@ const review = props => {
                 this is the best place to eat burgers in Los Angeles.
               </cite>
             </blockquote>
-            <span>the independent</span>
+            <span>- the independent</span>
           </div>
           <div className="review-card">
             <blockquote>
@@ -50,7 +51,7 @@ const review = props => {
                 definitely two stuffed and happy customers.
               </cite>
             </blockquote>
-            <span>los angeles eating adventures</span>
+            <span>- los angeles eating adventures</span>
           </div>
           <div className="review-card">
             <blockquote>
@@ -68,7 +69,7 @@ const review = props => {
                 Burger like getting a McDonals but 100,000,000,000 times better.
               </cite>
             </blockquote>
-            <span>abigail's food blog</span>
+            <span>- abigail's food blog</span>
           </div>
         </div>
       </section>

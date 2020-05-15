@@ -1,0 +1,16 @@
+.newsletter {
+  font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 800px) {
+  .newsletter {
+    padding: 14px;
+
+    h4 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}

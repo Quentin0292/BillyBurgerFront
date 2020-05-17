@@ -1,10 +1,10 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
-import BurgerMenu from "../components/MenuPage/burger"
-import SaladMenu from "../components/MenuPage/salad"
-import Toppings from "../components/MenuPage/toppings"
-import Sauces from "../components/MenuPage/sauces"
-import FreeSides from "../components/MenuPage/freeSides"
+import BurgerMenu from "../components/Menu/burger"
+import SaladMenu from "../components/Menu/salad"
+import Toppings from "../components/Menu/toppings"
+import Sauces from "../components/Menu/sauces"
+import FreeSides from "../components/Menu/freeSides"
 
 export default () => {
   return (

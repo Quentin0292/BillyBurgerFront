@@ -6,11 +6,13 @@ nav {
   padding: 10px 44px;
   font-size: 18px;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  // letter-spacing: 1.5px;
   z-index: 99; // not very good
 
   width: 100%;
-  font-family: "Passion One", cursive;
+  // font-family: "Passion One", cursive;
+  font-family: "Poppins", sans-serif;
+
   background-color: #eccc68;
   transition: height 0.25s;
   border-bottom: 2px solid #9a2522;
@@ -90,12 +92,12 @@ nav {
 }
 
 .sidebar-content {
-  font-family: "Passion One", cursive;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   background-color: #fff;
 
   font-size: 22px;
-  letter-spacing: 1px;
+  // letter-spacing: 1px;
   padding: 22px;
   min-width: 45%;
   max-width: 75%;

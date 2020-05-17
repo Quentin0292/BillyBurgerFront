@@ -24,6 +24,7 @@ module.exports = {
           `sauces`,
           `free_sides`,
           `toppings`,
+          `reviews`,
         ],
         server: {
           address: "cluster0-shard-00-02-p98fb.mongodb.net",

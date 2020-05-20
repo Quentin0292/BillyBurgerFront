@@ -6,7 +6,7 @@ export default () => {
     <section id="contact" style={{ marginTop: `110px` }}>
       <div className="contact-info">
         <div className="info">
-          <span>questions, comments, praise or criticism</span>
+          <span>questions, comments, reviews, praise or criticism</span>
           <h3>get in touch</h3>
           <p>
             Drops us a message via the form below and we promise you will

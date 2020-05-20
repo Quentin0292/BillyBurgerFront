@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Layout from "../components/Layout/layout"
 import AllReviews from "../components/Review/review"
 
@@ -11,10 +12,10 @@ const review = props => {
           <h1>reviews</h1>
         </div>
         <AllReviews />
-        {/* <div className="review-footer">
-          <p>You wan't to leave a review ?</p>
-          <button>GO !</button>
-        </div> */}
+        <div className="review-footer">
+          <h4>You wan't to leave a review ?</h4>
+          <Link to="/contact">Click here !</Link>
+        </div>
       </section>
     </Layout>
   )

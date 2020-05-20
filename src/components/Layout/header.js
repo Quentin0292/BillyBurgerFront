@@ -22,9 +22,9 @@ function SidebarContents() {
           <li>
             <Link to="/location">location</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/offers">offers</Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/reviews">reviews</Link>
           </li>
@@ -119,9 +119,9 @@ class Header extends Component {
             <li>
               <Link to="/location">location</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/offers">offers</Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/reviews">reviews</Link>
             </li>

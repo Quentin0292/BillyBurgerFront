@@ -1,5 +1,6 @@
 #review {
-  // padding: 0 190px;
+  padding-bottom: 160px;
+  border: 1px solid green;
   margin-top: 116px;
 
   font-family: "Poppins", sans-serif;
@@ -61,6 +62,26 @@
         color: #9a2522;
         font-weight: bold;
       }
+    }
+  }
+  .review-footer {
+    text-align: center;
+    height: 120px;
+
+    h4 {
+      font-size: 28px;
+      opacity: 0.8;
+      margin-bottom: 28px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #9a2522;
+      font-size: 18px;
+      padding: 12px 16px;
+      border: 2px solid #9a2522;
+      border-radius: 4px;
+      font-weight: bold;
     }
   }
 }

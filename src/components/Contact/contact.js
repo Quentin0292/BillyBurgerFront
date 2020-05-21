@@ -21,7 +21,13 @@ export default () => {
             guarantee an immediate reply. Thank you!
           </p>
         </div>
-        <div className="form" method="POST" netlify>
+        <div
+          className="form"
+          method="POST"
+          netlify
+          data-netlify-honeypot="bot-field"
+          hidden
+        >
           <form action="#">
             <div className="field">
               <label>

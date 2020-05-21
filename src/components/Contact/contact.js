@@ -21,7 +21,7 @@ export default () => {
             guarantee an immediate reply. Thank you!
           </p>
         </div>
-        <div className="form">
+        <div className="form" method="POST" netlify>
           <form action="#">
             <div className="field">
               <label>

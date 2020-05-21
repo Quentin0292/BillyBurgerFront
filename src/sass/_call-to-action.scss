@@ -1,5 +1,15 @@
 .newsletter {
   font-family: "Poppins", sans-serif;
+
+  button {
+    padding: 18px 56px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-color: #9a2522;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -10,7 +20,7 @@
       font-size: 32px;
     }
     p {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 }

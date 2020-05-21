@@ -7,8 +7,8 @@ const locationAndFranchise = () => {
         <div className="info-content">
           <h2>realy faaaaaaast delivery !</h2>
           <p>
-            Mauris sed nisl at massa vehicula tristrique Integer lorem eros,
-            vestibuluti ac ante non, consectetur hendrerit lacus.
+            We're thrilled to announce that we NOW DELIVER through Uber Eats,
+            Deliveroo and Door Dash! Order today!
           </p>
           <button className="btn-location">find your location</button>
         </div>
@@ -28,8 +28,8 @@ const locationAndFranchise = () => {
         <div className="info-content">
           <h2>don't wait become one of us now !</h2>
           <p>
-            Mauris sed nisl at massa vehicula tristrique Integer lorem eros,
-            vestibuluti ac ante non, consectetur hendrerit lacus.
+            Not Fast Food! Good Food Fast! A franchise concept so good, your
+            customers will always come back for more!
           </p>
           <button className="btn-franchise">franchise opportunity</button>
         </div>

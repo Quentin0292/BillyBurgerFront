@@ -13,7 +13,7 @@
 
       background-color: #fff;
       border-radius: 10px;
-      margin-bottom: 45px;
+      margin-bottom: 52px;
       box-shadow: 3px 3px 12px -2px rgba(0, 0, 0, 0.66);
 
       img {
@@ -58,11 +58,10 @@
   }
 }
 
-@media only screen and (min-width: 1650px){
+@media only screen and (min-width: 1650px) {
   #burger-menu {
-    // display: none;
     .all-burgers {
-      padding: 80px 120px;
+      padding: 80px 180px;
     }
   }
 }

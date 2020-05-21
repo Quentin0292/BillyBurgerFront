@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Sandwiches from "../images/sandwiches.png"
 import Burger from "../images/burger-menu.png"
 import Salad from "../images/salad.png"
@@ -16,11 +17,12 @@ const Menu = () => {
               <span>wiches</span>
             </h2>
             <p>
-              Morbi sed molesuada leao. Nom quis lectus convallis, interdum,
-              lectus, si atel, fringila sem. In imperdiet non ultricies
-              suspendisse ac diam id elit
+              Thinly sliced Turkey, crunchy apples, tangy parmesan cheese,
+              cranberries, almonds, zookz Sweet Heat Mustard Sauce
             </p>
-            <button>View Menu</button>
+            <Link to="/menu" className="button-menu">
+              View Menu
+            </Link>
           </div>
           <div className="picture">
             <img src={Sandwiches} alt="sandwiches" />
@@ -33,12 +35,14 @@ const Menu = () => {
               <span>burgers</span>
             </h2>
             <p>
-              Consequat lorem, phasellus convallis ante augue finibus maximus.
-              In imperdiet non ultricies suspendisse ac diam id elit laoreet.
-              Cras ac metus vel sem mlestie aliquet porta. Mauris ulticies nulla
-              ac eros ultriceis.
+              Caramelized onions, tomatoes, pickels, avocado, white cheddar and
+              cheese sauce. Bacon, crispy onion ring, american cheese and bbq
+              sauce; Homemade chili, melted cheese, BBQ ranch, caramelized
+              onions.
             </p>
-            <button>View Menu</button>
+            <Link className="button-menu" to="/menu">
+              View Menu
+            </Link>
           </div>
           <div className="picture">
             <img src={Burger} alt="burger" />
@@ -51,11 +55,12 @@ const Menu = () => {
               <span>salads</span>
             </h2>
             <p>
-              Cras a dui congue, ultrices erat id, in imperdiet non ultricies.
-              Susendisse ac diam id elit cursus lectus praesent sit amet
-              scelerisque mauris.
+              Fresh mixed greens, chicken, black beans, sweet corn, sunflower
+              seeds, feta cheese, and Zookz Honey Balsamic Vinaigrette
             </p>
-            <button>View Menu</button>
+            <Link className="button-menu" to="/menu">
+              View Menu
+            </Link>
           </div>
           <div className="picture">
             <img src={Salad} alt="salad" />
@@ -70,12 +75,13 @@ const Menu = () => {
               <span>kids</span>
             </h2>
             <p>
-              Mauris sed nisl at massa vehicula tristique. Integer lorem eros,
-              vestibuum ac ante non, consectetur hendrerit locus. Mauris sed
-              nisl at massa vehicula tristique. Integer lorem eros, vestibuum ac
-              ante non, consectetur hendrerit locus.
+              Grilled cheese, fries, fruit juice & toy. Cheeseburger with
+              ketchup, fries, fruit juice & toy. All angus beef patty for your
+              pet !
             </p>
-            <button>View Menu</button>
+            <Link className="button-menu" to="/menu">
+              View Menu
+            </Link>
           </div>
           <div className="picture">
             <img src={HotDog} alt="hot-dog" />
@@ -92,7 +98,9 @@ const Menu = () => {
               Sed rhancus dolor a nisl iaculis, eu ullamcorper est pellentesque.
               Sed rhancus dolor a nisl iaculis, eu ullamcorper est pellentesque.
             </p>
-            <button>View Menu</button>
+            <Link className="button-menu" to="/menu">
+              View Menu
+            </Link>
           </div>
           <div className="picture">
             <img src={IceCream} alt="ice-cream" />
@@ -106,8 +114,6 @@ const Menu = () => {
               <span>much</span>
               <span>more...</span>
             </h2>
-
-            <button>></button>
           </div>
         </div>
       </div>

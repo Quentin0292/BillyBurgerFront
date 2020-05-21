@@ -40,10 +40,9 @@ export default () => {
               <span>billy-burger@4505meats.com</span>
             </div>
             <div className="location-text">
-              <p>Billy Burger is open 7 days a week.</p>
               <p>open 7 days a week 10:30 AM - 10:00 PM</p>
               <p>
-                Come on in and order ath the counter or{" "}
+                Come on in and order at the counter or{" "}
                 <span>pre-order online for pick up</span> at a later date or
                 give us a call to secure your Q! You can also have our smoked
                 meaty deliciousness delivered to your doorstep with one of our
